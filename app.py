@@ -318,11 +318,25 @@ with tab_recent:
 with tab_daily:
     if changes.empty:
         st.markdown(
-            f"""<div class="empty"><h3>⏳ Daily comparisons start tonight</h3>
+            f"""<div class="empty"><h3>⏳ The tracker's own daily comparisons start tonight</h3>
             The first snapshot of {len(latest):,} designations was saved on {fmt_date(runs.iloc[0]['run_date'])}.
-            Every evening from now on the tracker compares the new list with the day before, and each
-            addition, removal and amendment will appear here with the fields that changed.</div>""",
+            From this evening, every addition, removal and amendment the tracker finds will appear here
+            with the fields that changed.</div>""",
             unsafe_allow_html=True,
+        )
+        last_fcdo = latest["updated"].max()
+        touched = latest[latest["updated"] == last_fcdo].sort_values("primary_name")
+        st.write("")
+        section(f"Meanwhile: the FCDO's most recent update, {fmt_date(last_fcdo)}",
+                f"{len(touched)} listings carry this Last Updated date in the published list")
+        touched = touched.assign(
+            What=lambda d: d["designated"].eq(last_fcdo).map({True: "New designation", False: "Amended"}))
+        st.dataframe(
+            touched[["What", "primary_name", "designation_type", "main_regime", "designated"]].rename(columns={
+                "primary_name": "Name", "designation_type": "Type", "main_regime": "Regime",
+                "designated": "First designated"}),
+            hide_index=True, width="stretch",
+            column_config={"First designated": st.column_config.DateColumn(format="D MMM YYYY")},
         )
     else:
         history = runs[~runs["baseline"].astype(str).str.lower().eq("true")]
@@ -516,12 +530,14 @@ with tab_quality:
         cols = st.columns(3)
         for col, (kind, fields) in zip(cols, checks.items()):
             with col:
-                section(f"{kind}s", f"{int(masks[kind].sum()):,} listings")
+                plural = {"Individual": "Individuals", "Entity": "Entities", "Ship": "Ships"}[kind]
+                section(plural, f"{int(masks[kind].sum()):,} listings")
                 pct = pd.Series({f: m[masks[kind]].mean() * 100 for f, m in fields.items()}).sort_values()
                 colours = ["#059669" if v >= 75 else "#d97706" if v >= 40 else "#e11d48" for v in pct.values]
                 fig = go.Figure(go.Bar(x=pct.values, y=pct.index, orientation="h", marker_color=colours,
-                                       text=[f"{v:.0f}%" for v in pct.values], textposition="outside"))
-                fig.update_xaxes(range=[0, 115], ticksuffix="%")
+                                       text=[f"{v:.0f}%" for v in pct.values], textposition="inside",
+                                       insidetextanchor="end", textfont=dict(color="white", size=12)))
+                fig.update_xaxes(range=[0, 100], ticksuffix="%")
                 st.plotly_chart(style_fig(fig, 300, legend=False), width="stretch")
 
         section("Identifier strength by regime", "Individuals only, regimes with at least 30 individuals")
