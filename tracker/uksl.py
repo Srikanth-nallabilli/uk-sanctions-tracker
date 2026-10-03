@@ -147,14 +147,18 @@ def to_designations(raw: pd.DataFrame) -> pd.DataFrame:
 
     out = []
     for uid, grp in raw.groupby("unique_id", sort=True):
-        primary = grp.loc[is_primary.loc[grp.index], "full_name"]
-        primary_name = primary.iloc[0] if len(primary) else grp["full_name"].iloc[0]
+        # A few listings have only spelling variations or aliases and no row
+        # marked "Primary Name". Fall back to the first name alphabetically so
+        # the choice is the same every day and does not show as an amendment.
+        primary = [n for n in grp.loc[is_primary.loc[grp.index], "full_name"] if n]
+        candidates = primary or sorted(n for n in grp["full_name"] if n)
+        primary_name = candidates[0] if candidates else ""
         other_names = _join(n for n in grp["full_name"] if n != primary_name)
         out.append({
             "unique_id": uid,
             "primary_name": primary_name,
             "other_names": other_names,
-            "name_count": grp["full_name"].nunique(),
+            "name_count": len({n for n in grp["full_name"] if n}),
             "regime": _join(grp["regime"]),
             "designation_type": _join(grp["designation_type"]),
             "designation_source": _join(grp["designation_source"]),
@@ -174,6 +178,25 @@ def to_designations(raw: pd.DataFrame) -> pd.DataFrame:
             "other_info_hash": _hash(grp["other_information"]),
         })
     return pd.DataFrame(out)
+
+
+def short_regime(name: str) -> str:
+    """Turn a regulation title into a readable label for charts and tables.
+
+    'The Russia (Sanctions) (EU Exit) Regulations 2019' becomes 'Russia'.
+    Several regimes on one listing are separated by '; ' and each is shortened.
+    """
+    def one(title: str) -> str:
+        s = re.sub(r"^The ", "", title.strip())
+        s = s.replace("(International Sanctions)", "(International)")
+        s = re.sub(r"\s*\((?:EU Exit|Sanctions|United Nations Sanctions)\)", "", s)
+        s = re.sub(r"\s*(?:Sanctions )?Regulations \d{4}$", "", s)
+        s = re.sub(r"^Isil\b", "ISIL", s)
+        if s == "Counter-Terrorism":
+            s = "Counter-Terrorism (Domestic)"
+        return s.strip() or title
+
+    return "; ".join(one(part) for part in str(name).split("; ") if part) if name else ""
 
 
 CHANGE_COLUMNS = [

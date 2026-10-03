@@ -7,6 +7,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from tracker.uksl import short_regime
+
 DATA_DIR = Path(os.environ.get("TRACKER_DATA_DIR", Path(__file__).parent / "data"))
 SOURCE_PAGE = "https://www.gov.uk/government/publications/the-uk-sanctions-list"
 COLOURS = {"Added": "#2e7d32", "Removed": "#c62828", "Amended": "#ef8f00"}
@@ -26,6 +28,10 @@ def load():
         if changes_path.exists() else pd.DataFrame()
     )
     latest = pd.read_csv(DATA_DIR / "latest.csv.gz", dtype=str, keep_default_na=False)
+    # Shorten regulation titles for display only; stored data keeps the full title.
+    latest["regime"] = latest["regime"].map(short_regime)
+    if not changes.empty:
+        changes["regime"] = changes["regime"].map(short_regime)
     return runs, changes, latest
 
 

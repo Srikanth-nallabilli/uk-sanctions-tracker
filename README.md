@@ -6,7 +6,7 @@ A tool that checks the UK Sanctions List every day and records who was added, wh
 
 Screening is only as good as the list you screen against. The UK Sanctions List, published by the FCDO, changes several times a week, and since the OFSI Consolidated List closed on 28 January 2026 it is the only official source for UK sanctions designations. Compliance teams need to know quickly when a new person or company is designated so they can check whether any customers match, and when a listing is amended with a new alias or a wider set of sanctions.
 
-This project complements my [Sanctions Screening Tool](https://github.com/Srikanth-nallabilli). That tool checks names against a list. This one keeps track of how the list itself is changing.
+This project complements my [Sanctions Screening Tool](https://github.com/Srikanth-nallabilli/sanctions-screening-tool). That tool checks names against a list. This one keeps track of how the list itself is changing.
 
 ## What it does
 
