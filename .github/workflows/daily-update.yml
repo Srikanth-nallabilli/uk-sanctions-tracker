@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   update:
@@ -23,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Download list and record changes
-        run: python -m tracker.update
+        run: python -m tracker.update --alert-file alert.md
 
       - name: Commit updated data
         run: |
@@ -36,3 +37,15 @@ jobs:
             git commit -m "Daily update $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Open an alert issue when the list changed
+        if: hashFiles('alert.md') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create sanctions-alert --color D93F0B --description "Daily list changes" 2>/dev/null || true
+          gh issue create \
+            --title "$(head -n 1 alert.md | sed 's/^## //')" \
+            --body-file alert.md \
+            --label sanctions-alert \
+            --assignee "${{ github.repository_owner }}"

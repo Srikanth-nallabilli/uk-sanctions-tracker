@@ -186,8 +186,24 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_overview, tab_recent, tab_daily, tab_search = st.tabs(
-    ["📊 Overview", "🆕 Recent activity", "🔁 Daily changes", "🔎 Search the list"])
+tab_overview, tab_recent, tab_daily, tab_fleet, tab_quality, tab_search = st.tabs(
+    ["📊 Overview", "🆕 Recent activity", "🔁 Daily changes", "🚢 Shadow fleet", "✅ Data quality",
+     "🔎 Search the list"])
+
+HAS_EXTRA_FIELDS = "flag" in latest.columns
+PENDING_NOTE = ('<div class="empty"><h3>Coming with the next daily check</h3>These details are saved from '
+                'the next run of the daily check onwards.</div>')
+
+# Moments that explain the big jumps in the monthly chart.
+EVENTS = [
+    ("2022-02-24", "Russia invades Ukraine"),
+    ("2025-09-29", "UN sanctions on Iran reimposed"),
+    ("2026-02-24", "297 Russia designations"),
+]
+
+
+def split_values(series):
+    return series.str.split(r"\s*[;,]\s*").explode().str.strip().replace("", pd.NA).dropna()
 
 # ------------------------------------------------------------------ overview
 with tab_overview:
@@ -202,7 +218,29 @@ with tab_overview:
     fig = px.bar(monthly, x="Month", y="Designations", color="Regime",
                  category_orders={"Regime": top_regimes + ["Other"]}, color_discrete_map=colour_map)
     fig.update_layout(bargap=0.15)
+    for day, label in EVENTS:
+        fig.add_shape(type="line", x0=day, x1=day, y0=0, y1=1, yref="paper",
+                      line=dict(color="#475569", width=1, dash="dot"))
+        fig.add_annotation(x=day, y=1, yref="paper", text=label, showarrow=False, xanchor="left",
+                           yanchor="top", xshift=4, font=dict(size=11, color="#475569"),
+                           bgcolor="rgba(255,255,255,.85)")
     st.plotly_chart(style_fig(fig, 380), width="stretch")
+
+    section("Where designated people and companies are linked to",
+            "Countries named as a nationality or address on each listing")
+    countries = latest[["unique_id", "nationality", "address_country"]].copy()
+    countries["country"] = (countries["nationality"] + "; " + countries["address_country"])
+    country_counts = (countries.assign(country=countries["country"].str.split(r"\s*;\s*"))
+                      .explode("country").query("country != ''")
+                      .drop_duplicates(["unique_id", "country"])["country"].value_counts().reset_index())
+    country_counts.columns = ["Country", "Designations"]
+    fig = px.choropleth(country_counts, locations="Country", locationmode="country names",
+                        color="Designations", color_continuous_scale=["#dbeafe", "#1e3a8a"],
+                        hover_name="Country")
+    fig.update_geos(showframe=False, showcoastlines=False, projection_type="natural earth",
+                    bgcolor="rgba(0,0,0,0)", landcolor="#f1f5f9", showland=True)
+    fig.update_layout(coloraxis_colorbar=dict(title="", thickness=12))
+    st.plotly_chart(style_fig(fig, 420, legend=False), width="stretch")
 
     left, right = st.columns([3, 2])
     with left:
@@ -305,6 +343,199 @@ with tab_daily:
         )
         st.download_button("⬇ Download the full change log (CSV)", changes.to_csv(index=False).encode("utf-8"),
                            file_name="uk_sanctions_changes.csv", mime="text/csv")
+
+# ------------------------------------------------------------------ shadow fleet
+with tab_fleet:
+    ships = latest[latest["designation_type"] == "Ship"].copy()
+    st.markdown(
+        f"""<div class="section-sub" style="font-size:.95rem">The UK has designated <b>{len(ships):,} ships</b>,
+        most of them tankers moving Russian oil outside the price cap. Vessels in this "shadow fleet" often
+        change flag and owner to stay hidden, so flags, ownership and age are the details that matter
+        for trade finance and maritime screening.</div>""",
+        unsafe_allow_html=True,
+    )
+    if not HAS_EXTRA_FIELDS or ships["flag"].eq("").all():
+        st.markdown(PENDING_NOTE, unsafe_allow_html=True)
+    else:
+        ships["n_prev_flags"] = ships["previous_flags"].apply(
+            lambda v: len([x for x in pd.Series([v]).str.split(r"\s*[;,]\s*").iloc[0] if x.strip()]) if v else 0)
+        ships["built"] = pd.to_numeric(ships["year_built"].str.extract(r"(\d{4})")[0], errors="coerce")
+        ships["age"] = pd.Timestamp(last["run_date"]).year - ships["built"]
+        ships["gt"] = pd.to_numeric(ships["tonnage"].str.replace(",", "").str.extract(r"(\d+)")[0],
+                                    errors="coerce")
+        ships["ship_type_clean"] = ships["ship_type"].str.split(";").str[0].str.strip().str.capitalize()
+
+        hopped = int((ships["n_prev_flags"] > 0).sum())
+        median_age = ships["age"].median()
+        over_15 = int((ships["age"] >= 15).sum())
+        designated_2026 = int((ships["designated"].dt.year == this_year).sum())
+        st.markdown(
+            f"""<div class="cards">
+  <div class="card" style="--accent:{NAVY}"><div class="label">Designated ships</div>
+    <div class="value">{len(ships):,}</div><div class="sub">{designated_2026} added in {this_year}</div></div>
+  <div class="card" style="--accent:#d97706"><div class="label">Changed flag before</div>
+    <div class="value">{hopped / max(len(ships), 1):.0%}</div><div class="sub">{hopped:,} ships list at least one previous flag</div></div>
+  <div class="card" style="--accent:#e11d48"><div class="label">Median age</div>
+    <div class="value">{median_age:.0f} yrs</div><div class="sub">{over_15:,} ships are 15 years or older</div></div>
+  <div class="card" style="--accent:#0d9488"><div class="label">Distinct current flags</div>
+    <div class="value">{split_values(ships['flag']).nunique()}</div><div class="sub">across the designated fleet</div></div>
+</div>""",
+            unsafe_allow_html=True,
+        )
+
+        left, right = st.columns(2)
+        with left:
+            section("Current flag", "The country each ship is believed to be registered in today")
+            flags = split_values(ships["flag"]).value_counts().head(12).sort_values()
+            fig = go.Figure(go.Bar(x=flags.values, y=flags.index, orientation="h", marker_color=NAVY,
+                                   text=flags.values, textposition="outside"))
+            st.plotly_chart(style_fig(fig, 400, legend=False), width="stretch")
+        with right:
+            section("Flag hopping", "Number of previous flags listed for each ship")
+            hops = ships["n_prev_flags"].clip(upper=5).value_counts().sort_index()
+            labels = [f"{int(i)}{'+' if i == 5 else ''}" for i in hops.index]
+            fig = go.Figure(go.Bar(x=labels, y=hops.values, marker_color="#d97706", text=hops.values,
+                                   textposition="outside"))
+            fig.update_xaxes(title="Previous flags")
+            st.plotly_chart(style_fig(fig, 400, legend=False), width="stretch")
+
+        left, right = st.columns(2)
+        with left:
+            section("Ship types")
+            kinds = ships["ship_type_clean"].replace("", "Not stated").value_counts().head(8).sort_values()
+            fig = go.Figure(go.Bar(x=kinds.values, y=kinds.index, orientation="h", marker_color="#0d9488",
+                                   text=kinds.values, textposition="outside"))
+            st.plotly_chart(style_fig(fig, 360, legend=False), width="stretch")
+        with right:
+            section("Age of the fleet", "Year each ship was built")
+            fig = px.histogram(ships.dropna(subset=["built"]), x="built", nbins=30,
+                               color_discrete_sequence=["#e11d48"])
+            fig.update_xaxes(title="Year built")
+            fig.update_yaxes(title="Ships")
+            st.plotly_chart(style_fig(fig, 360, legend=False), width="stretch")
+
+        section("Ships designated per month")
+        per_month = (ships.dropna(subset=["designated"])
+                     .assign(Month=lambda d: d["designated"].dt.to_period("M").dt.to_timestamp())
+                     .groupby("Month").size().reset_index(name="Ships"))
+        fig = px.bar(per_month[per_month["Month"] >= "2023-01-01"], x="Month", y="Ships",
+                     color_discrete_sequence=[NAVY])
+        st.plotly_chart(style_fig(fig, 300, legend=False), width="stretch")
+
+        section("Fleet register", "Search by ship name, IMO number, flag or owner")
+        fq = st.text_input("Filter ships", placeholder="e.g. Gabon, tanker, IMO 9", key="fleet_q")
+        table = ships
+        if fq:
+            q = fq.lower()
+            mask = pd.Series(False, index=ships.index)
+            for col in ["primary_name", "imo_number", "flag", "previous_flags", "ship_type", "owner_operator"]:
+                mask |= ships[col].str.lower().str.contains(q, regex=False)
+            table = ships[mask]
+        st.dataframe(
+            table.sort_values("designated", ascending=False)[
+                ["primary_name", "imo_number", "flag", "previous_flags", "ship_type_clean", "built", "gt",
+                 "owner_operator", "designated"]].rename(columns={
+                    "primary_name": "Ship", "imo_number": "IMO", "flag": "Current flag",
+                    "previous_flags": "Previous flags", "ship_type_clean": "Type", "built": "Built",
+                    "gt": "Gross tonnage", "owner_operator": "Owner or operator", "designated": "Designated"}),
+            hide_index=True, width="stretch", height=420,
+            column_config={"Designated": st.column_config.DateColumn(format="D MMM YYYY"),
+                           "Built": st.column_config.NumberColumn(format="%d"),
+                           "Gross tonnage": st.column_config.NumberColumn(format="%,d")},
+        )
+
+# ------------------------------------------------------------------ data quality
+with tab_quality:
+    st.markdown(
+        """<div class="section-sub" style="font-size:.95rem">Screening systems match customers against
+        names, then use other details to tell a real match from a namesake. When a listing has few
+        identifiers, analysts get more false positives that are harder to clear. This view shows how
+        complete the identifying details are across the list.</div>""",
+        unsafe_allow_html=True,
+    )
+    if not HAS_EXTRA_FIELDS:
+        st.markdown(PENDING_NOTE, unsafe_allow_html=True)
+    else:
+        has = lambda col: latest[col].ne("")  # noqa: E731
+        people = latest["designation_type"] == "Individual"
+        orgs = latest["designation_type"] == "Entity"
+        vessels = latest["designation_type"] == "Ship"
+        checks = {
+            "Individual": {
+                "Date of birth": has("dob"),
+                "Nationality": has("nationality"),
+                "Place of birth": has("town_of_birth") | has("country_of_birth"),
+                "Passport or national ID": has("has_passport") | has("has_national_id"),
+                "Position or role": has("position"),
+            },
+            "Entity": {
+                "Address country": has("address_country"),
+                "Business registration number": has("has_business_reg"),
+                "Type of entity": has("type_of_entity"),
+                "Parent company": has("parent_company"),
+            },
+            "Ship": {
+                "IMO number": has("imo_number"),
+                "Current flag": has("flag"),
+                "Ship type": has("ship_type"),
+                "Year built": has("year_built"),
+            },
+        }
+        masks = {"Individual": people, "Entity": orgs, "Ship": vessels}
+
+        # Strength for individuals: how many of the four core identifiers are present.
+        core = ["Date of birth", "Nationality", "Place of birth", "Passport or national ID"]
+        score = sum(checks["Individual"][c].astype(int) for c in core)
+        latest["id_strength"] = pd.cut(score, bins=[-1, 1, 2, 4], labels=["Weak", "Moderate", "Strong"])
+        indiv = latest[people]
+        strong = (indiv["id_strength"] == "Strong").mean()
+        weak = (indiv["id_strength"] == "Weak").mean()
+        name_only = int(((score == 0) & people).sum())
+
+        st.markdown(
+            f"""<div class="cards">
+  <div class="card" style="--accent:#059669"><div class="label">Strong identifiers</div>
+    <div class="value">{strong:.0%}</div><div class="sub">individuals with 3 or 4 of DOB, nationality, place of birth, ID</div></div>
+  <div class="card" style="--accent:#e11d48"><div class="label">Weak identifiers</div>
+    <div class="value">{weak:.0%}</div><div class="sub">individuals with 1 or none of these</div></div>
+  <div class="card" style="--accent:#d97706"><div class="label">Name only</div>
+    <div class="value">{name_only:,}</div><div class="sub">individuals with none of the four</div></div>
+  <div class="card" style="--accent:{NAVY}"><div class="label">Ships with IMO</div>
+    <div class="value">{checks['Ship']['IMO number'][vessels].mean():.0%}</div><div class="sub">the one identifier that never changes</div></div>
+</div>""",
+            unsafe_allow_html=True,
+        )
+
+        cols = st.columns(3)
+        for col, (kind, fields) in zip(cols, checks.items()):
+            with col:
+                section(f"{kind}s", f"{int(masks[kind].sum()):,} listings")
+                pct = pd.Series({f: m[masks[kind]].mean() * 100 for f, m in fields.items()}).sort_values()
+                colours = ["#059669" if v >= 75 else "#d97706" if v >= 40 else "#e11d48" for v in pct.values]
+                fig = go.Figure(go.Bar(x=pct.values, y=pct.index, orientation="h", marker_color=colours,
+                                       text=[f"{v:.0f}%" for v in pct.values], textposition="outside"))
+                fig.update_xaxes(range=[0, 115], ticksuffix="%")
+                st.plotly_chart(style_fig(fig, 300, legend=False), width="stretch")
+
+        section("Identifier strength by regime", "Individuals only, regimes with at least 30 individuals")
+        by_reg = (indiv.groupby("main_regime")["id_strength"].value_counts(normalize=True)
+                  .unstack(fill_value=0).reindex(columns=["Strong", "Moderate", "Weak"], fill_value=0))
+        by_reg = by_reg[indiv["main_regime"].value_counts().reindex(by_reg.index) >= 30].sort_values("Weak")
+        fig = go.Figure()
+        for level, colour in [("Strong", "#059669"), ("Moderate", "#d97706"), ("Weak", "#e11d48")]:
+            fig.add_bar(y=by_reg.index, x=by_reg[level] * 100, name=level, orientation="h", marker_color=colour)
+        fig.update_layout(barmode="stack")
+        fig.update_xaxes(ticksuffix="%", range=[0, 100])
+        st.plotly_chart(style_fig(fig, 420), width="stretch")
+
+        section("Hardest listings to clear", "Individuals with no date of birth, nationality, place of birth or ID")
+        st.dataframe(
+            latest[people & (score == 0)][["primary_name", "other_names", "main_regime", "designated"]].rename(
+                columns={"primary_name": "Name", "other_names": "Other names", "main_regime": "Regime",
+                         "designated": "Designated"}),
+            hide_index=True, width="stretch", height=300,
+            column_config={"Designated": st.column_config.DateColumn(format="D MMM YYYY")},
+        )
 
 # ------------------------------------------------------------------ search
 with tab_search:

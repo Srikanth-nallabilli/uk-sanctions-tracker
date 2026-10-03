@@ -45,7 +45,29 @@ COLUMN_ALIASES = {
     "imo_number": ["imo number"],
     "statement_of_reasons": ["uk statement of reasons"],
     "other_information": ["other information"],
+    # Identifier fields. Only whether they are present is kept, never the numbers.
+    "passport_number": ["passport number"],
+    "national_id": ["national identifier number"],
+    "town_of_birth": ["town of birth"],
+    "country_of_birth": ["country of birth"],
+    "gender": ["gender"],
+    "business_reg": ["business registration number s", "business registration numbers",
+                     "business registration number"],
+    "type_of_entity": ["type of entity"],
+    "parent_company": ["parent company"],
+    # Ship fields
+    "flag": ["current believed flag of ship", "current flag"],
+    "previous_flags": ["previous flags"],
+    "ship_type": ["type of ship"],
+    "tonnage": ["tonnage of ship"],
+    "length": ["length of ship"],
+    "year_built": ["year built"],
+    "owner_operator": ["current owneroperator s", "current owneroperators", "current owner operator s"],
+    "previous_owner_operator": ["previous owneroperator s", "previous owneroperators",
+                                "previous owner operator s"],
 }
+
+REQUIRED_FIELDS = {"unique_id", "name6"}
 
 # Fields compared between two days to decide whether a listing was amended.
 # Each one gets a plain English label for the dashboard.
@@ -63,6 +85,8 @@ TRACKED_FIELDS = {
     "imo_number": "IMO number",
     "reasons_hash": "Statement of reasons",
     "other_info_hash": "Other information",
+    "flag": "Flag of ship",
+    "owner_operator": "Owner or operator of ship",
 }
 
 
@@ -121,6 +145,8 @@ def read_raw(data: bytes) -> pd.DataFrame:
     for field in COLUMN_ALIASES:
         if field not in raw.columns:
             raw[field] = ""
+    # Recorded so the daily job can log any heading it could not find.
+    raw.attrs["missing_columns"] = sorted(set(COLUMN_ALIASES) - set(mapping))
     return raw
 
 
@@ -176,6 +202,24 @@ def to_designations(raw: pd.DataFrame) -> pd.DataFrame:
             "un_ref": _join(grp["un_ref"]),
             "reasons_hash": _hash(grp["statement_of_reasons"]),
             "other_info_hash": _hash(grp["other_information"]),
+            # Identifier presence, used for the data quality view
+            "has_passport": "Y" if grp["passport_number"].str.len().gt(0).any() else "",
+            "has_national_id": "Y" if grp["national_id"].str.len().gt(0).any() else "",
+            "has_business_reg": "Y" if grp["business_reg"].str.len().gt(0).any() else "",
+            "town_of_birth": _join(grp["town_of_birth"]),
+            "country_of_birth": _join(grp["country_of_birth"]),
+            "gender": _join(grp["gender"]),
+            "type_of_entity": _join(grp["type_of_entity"]),
+            "parent_company": _join(grp["parent_company"]),
+            # Ship details, used for the shadow fleet view
+            "flag": _join(grp["flag"]),
+            "previous_flags": _join(grp["previous_flags"]),
+            "ship_type": _join(grp["ship_type"]),
+            "tonnage": _join(grp["tonnage"]),
+            "length": _join(grp["length"]),
+            "year_built": _join(grp["year_built"]),
+            "owner_operator": _join(grp["owner_operator"]),
+            "previous_owner_operator": _join(grp["previous_owner_operator"]),
         })
     return pd.DataFrame(out)
 
@@ -238,9 +282,12 @@ def diff(previous: pd.DataFrame, current: pd.DataFrame, run_date: str) -> pd.Dat
     for uid in sorted(prev_ids - curr_ids):
         changes.append(base(uid, prev.loc[uid], "Removed"))
 
+    # Only compare fields both days have. When a new field is added to the
+    # tracker, the first run after that must not flag every listing as amended.
+    comparable = [f for f in TRACKED_FIELDS if f in prev.columns and f in curr.columns] if len(prev) else []
     for uid in sorted(prev_ids & curr_ids):
         old, new = prev.loc[uid], curr.loc[uid]
-        changed = [f for f in TRACKED_FIELDS if str(old.get(f, "")) != str(new.get(f, ""))]
+        changed = [f for f in comparable if str(old[f]) != str(new[f])]
         if not changed:
             continue
         row = base(uid, new, "Amended")

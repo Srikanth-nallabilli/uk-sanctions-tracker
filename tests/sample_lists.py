@@ -39,8 +39,11 @@ def person(uid, surname, first, regime, sanctions="Asset freeze|Travel ban",
     return rows
 
 
-def entity(uid, name, regime, kind="Entity", sanctions="Asset freeze", country="Testland", imo=""):
+def entity(uid, name, regime, kind="Entity", sanctions="Asset freeze", country="Testland", imo="",
+           flag="", previous_flags="", ship_type="", year_built="", owner=""):
     return [{
+        "Current believed flag of ship": flag, "Previous flags": previous_flags, "Type of ship": ship_type,
+        "Year Built": year_built, "Current owner/operator (s)": owner,
         "Unique ID": uid, "Name 6": name, "Name type": "Primary Name",
         "Regime Name": regime, "Individual, Entity, Ship": kind,
         "Designation source": "UK", "Sanctions Imposed": sanctions,
@@ -65,7 +68,9 @@ def day_one():
         person("RUS0001", "PETROV", "Ivan", "Russia", aliases=["PETROFF"])
         + person("RUS0002", "SOKOLOVA", "Anna", "Russia")
         + entity("RUS0003", "NORTHWIND TRADING LLC", "Russia")
-        + entity("RUS0004", "OCEAN STAR", "Russia", kind="Ship", sanctions="Shipping sanctions", imo="IMO1234567")
+        + entity("RUS0004", "OCEAN STAR", "Russia", kind="Ship", sanctions="Shipping sanctions", imo="IMO1234567",
+                 flag="Gabon", previous_flags="Panama; Liberia", ship_type="Crude oil tanker", year_built="2004",
+                 owner="BLUE WAVE SHIPPING LTD")
         + person("IRN0001", "KARIMI", "Reza", "Iran", sanctions="Asset freeze")
         + person("GHR0001", "DOE", "Jon", "Global Human Rights")
     )

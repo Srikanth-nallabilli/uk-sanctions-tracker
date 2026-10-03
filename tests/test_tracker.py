@@ -69,3 +69,35 @@ def test_short_regime_labels():
     assert short_regime(
         "Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019"
     ) == "ISIL (Da'esh) and Al-Qaeda"
+
+
+def test_ship_fields_are_kept():
+    ship = to_designations(read_raw(to_csv(day_one()))).set_index("unique_id").loc["RUS0004"]
+    assert ship["flag"] == "Gabon"
+    assert ship["previous_flags"] == "Panama; Liberia"
+    assert ship["year_built"] == "2004"
+
+
+def test_new_field_does_not_flag_every_listing(tmp_path):
+    before = to_designations(read_raw(to_csv(day_one()))).drop(columns=["flag", "owner_operator"])
+    after = to_designations(read_raw(to_csv(day_one())))
+    assert diff(before, after, "2026-10-02").empty
+
+
+def test_same_day_rerun_keeps_baseline_and_totals(tmp_path):
+    run(to_csv(day_one()), "2026-10-01", tmp_path)
+    again = run(to_csv(day_one()), "2026-10-01", tmp_path)
+    assert again["baseline"] is True
+    run(to_csv(day_two()), "2026-10-02", tmp_path)
+    rerun = run(to_csv(day_two()), "2026-10-02", tmp_path)
+    assert (rerun["added"], rerun["removed"], rerun["amended"]) == (2, 1, 2)
+    assert rerun["new_changes"] == 0
+
+
+def test_alert_text_lists_changes(tmp_path):
+    from tracker.alert import alert_title, build_alert
+    run(to_csv(day_one()), "2026-10-01", tmp_path)
+    summary = run(to_csv(day_two()), "2026-10-02", tmp_path)
+    assert alert_title(summary) == "UK Sanctions List changes on 2026-10-02: 2 added, 1 removed, 2 amended"
+    text = build_alert(summary)
+    assert "Dmitri VOLKOV" in text and "Jon DOE" in text and "Sanctions imposed" in text
