@@ -93,8 +93,15 @@ def section(title, sub=""):
 
 
 # ------------------------------------------------------------------ data
-@st.cache_data(ttl=3600)
-def load():
+def data_version():
+    """Changes whenever the daily job commits new data, so the cache reloads straight away."""
+    files = ["runs.csv", "changes.csv", "latest.csv.gz"]
+    return tuple((f, (DATA_DIR / f).stat().st_mtime_ns, (DATA_DIR / f).stat().st_size)
+                 for f in files if (DATA_DIR / f).exists())
+
+
+@st.cache_data(ttl=3600, max_entries=2)
+def load(version):
     runs_path = DATA_DIR / "runs.csv"
     if not runs_path.exists():
         return None, None, None
@@ -116,7 +123,7 @@ def load():
     return runs, changes, latest
 
 
-runs, changes, latest = load()
+runs, changes, latest = load(data_version())
 
 
 def hero(last_checked="", since=""):
