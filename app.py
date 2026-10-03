@@ -202,10 +202,10 @@ PENDING_NOTE = ('<div class="empty"><h3>Coming with the next daily check</h3>The
                 'the next run of the daily check onwards.</div>')
 
 # Moments that explain the big jumps in the monthly chart.
-EVENTS = [
-    ("2022-02-24", "Russia invades Ukraine"),
-    ("2025-09-29", "UN sanctions on Iran reimposed"),
-    ("2026-02-24", "297 Russia designations"),
+EVENTS = [  # (date, label, height on the chart so labels close together do not overlap)
+    ("2022-02-24", "Russia invades Ukraine", 1.0),
+    ("2025-09-29", "UN sanctions on Iran return", 0.88),
+    ("2026-02-24", "297 Russia designations", 1.0),
 ]
 
 
@@ -225,10 +225,11 @@ with tab_overview:
     fig = px.bar(monthly, x="Month", y="Designations", color="Regime",
                  category_orders={"Regime": top_regimes + ["Other"]}, color_discrete_map=colour_map)
     fig.update_layout(bargap=0.15)
-    for day, label in EVENTS:
-        fig.add_shape(type="line", x0=day, x1=day, y0=0, y1=1, yref="paper",
+    for day, label, height in EVENTS:
+        fig.add_shape(type="line", x0=day, x1=day, y0=0, y1=height, yref="paper",
                       line=dict(color="#475569", width=1, dash="dot"))
-        fig.add_annotation(x=day, y=1, yref="paper", text=label, showarrow=False, xanchor="left",
+        fig.add_annotation(x=day, y=height, yref="paper", text=label, showarrow=False,
+                           xanchor="right" if day >= "2025-06-01" and height == 0.88 else "left",
                            yanchor="top", xshift=4, font=dict(size=11, color="#475569"),
                            bgcolor="rgba(255,255,255,.85)")
     st.plotly_chart(style_fig(fig, 380), width="stretch")
