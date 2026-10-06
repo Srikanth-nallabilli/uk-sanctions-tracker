@@ -1,4 +1,4 @@
 run_date,total_designations,added,removed,amended,baseline
 2026-10-03,6370,0,0,0,True
 2026-10-04,6370,0,0,0,False
-2026-10-06,6370,0,0,0,False
+2026-10-06,6369,0,1,1,False
