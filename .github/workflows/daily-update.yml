@@ -2,8 +2,13 @@ name: Daily sanctions list check
 
 on:
   schedule:
-    # 18:30 UTC every day, after most same-day FCDO updates have been published
-    - cron: "30 18 * * *"
+    # Two checks a day, at 15:30 and 19:30 UTC. GitHub often starts scheduled
+    # jobs several hours late, and a run that slips past midnight UTC is
+    # recorded under the next day's date. Starting earlier keeps each run on
+    # the right day, and the second check picks up any late FCDO update.
+    # Running twice on one day is safe: the second run only adds new changes.
+    - cron: "30 15 * * *"
+    - cron: "30 19 * * *"
   workflow_dispatch: {}
 
 permissions:
