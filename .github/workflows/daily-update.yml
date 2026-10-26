@@ -28,10 +28,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Download list and record changes
+      # Each list is downloaded separately. If one publisher's site is down the
+      # step fails (so the run shows red), but the steps below still save the
+      # lists that did work and raise their alert.
+      - name: Download lists and record changes
         run: python -m tracker.update --alert-file alert.md
 
       - name: Commit updated data
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "sanctions-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -43,8 +47,8 @@ jobs:
             git push
           fi
 
-      - name: Open an alert issue when the list changed
-        if: hashFiles('alert.md') != ''
+      - name: Open an alert issue when a list changed
+        if: ${{ !cancelled() && hashFiles('alert.md') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

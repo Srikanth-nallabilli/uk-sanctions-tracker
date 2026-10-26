@@ -1,9 +1,11 @@
-"""Daily job: download the UK Sanctions List, compare it with the last run,
+"""Daily job: download each sanctions list, compare it with the last run,
 and record what changed.
 
 Usage:
-    python -m tracker.update                  # download from GOV.UK
-    python -m tracker.update --file list.csv  # use a file you already have
+    python -m tracker.update                              # all lists
+    python -m tracker.update --source uk                  # just one list
+    python -m tracker.update --source uk --file list.csv  # use a file you already have
+                                                          # (for OFAC, a folder with sdn.csv etc.)
 """
 
 from __future__ import annotations
@@ -11,34 +13,27 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import sys
-import urllib.request
+import traceback
 from pathlib import Path
 
 import pandas as pd
 
 from tracker.alert import build_alert
-from tracker.uksl import CHANGE_COLUMNS, SOURCE_URL, diff, read_raw, to_designations
+from tracker.common import CHANGE_COLUMNS, diff
+from tracker.ofac import read_folder
+from tracker.sources import SOURCES
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
-def download(url: str = SOURCE_URL) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": "uk-sanctions-tracker/1.0"})
-    with urllib.request.urlopen(request, timeout=120) as response:
-        return response.read()
-
-
-def run(data: bytes, run_date: str, data_dir: Path = DATA_DIR) -> dict:
+def run(data, run_date: str, data_dir: Path = DATA_DIR / "uk", source: str = "uk") -> dict:
+    """Parse one list's download and record what changed since its last run in data_dir."""
     data_dir.mkdir(parents=True, exist_ok=True)
     latest_path = data_dir / "latest.csv.gz"
     changes_path = data_dir / "changes.csv"
     runs_path = data_dir / "runs.csv"
 
-    raw = read_raw(data)
-    missing = raw.attrs.get("missing_columns", [])
-    if missing:
-        print("Note: these optional columns were not found in the file: " + ", ".join(missing))
-    current = to_designations(raw)
+    current = SOURCES[source].parse(data)
     if current.empty:
         raise ValueError("The downloaded list has no designations. Stopping so the history is not overwritten.")
 
@@ -81,12 +76,13 @@ def run(data: bytes, run_date: str, data_dir: Path = DATA_DIR) -> dict:
         "amended": int(counts.get("Amended", 0)),
         "baseline": first_run or was_baseline,
         "new_changes": len(changes),
+        "source": source,
     }
 
     if runs.empty:
-        runs = pd.DataFrame(columns=[k for k in summary if k != "new_changes"])
+        runs = pd.DataFrame(columns=[k for k in summary if k not in ("new_changes", "source")])
     runs = runs[runs["run_date"] != run_date]
-    record = {k: v for k, v in summary.items() if k != "new_changes"}
+    record = {k: v for k, v in summary.items() if k not in ("new_changes", "source")}
     runs = pd.concat([runs, pd.DataFrame([record])], ignore_index=True)
     runs.to_csv(runs_path, index=False)
 
@@ -95,29 +91,53 @@ def run(data: bytes, run_date: str, data_dir: Path = DATA_DIR) -> dict:
     return summary
 
 
+def _load(source: str, path: str):
+    if source == "ofac":
+        return read_folder(path)
+    return Path(path).read_bytes()
+
+
 def main(argv=None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--file", help="Path to a downloaded UK Sanctions List CSV")
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--source", choices=sorted(SOURCES), action="append",
+                        help="List to update. Repeat for several. Default: all lists")
+    parser.add_argument("--file", help="A file you already downloaded (only with a single --source)")
     parser.add_argument("--date", default=dt.date.today().isoformat(), help="Run date, YYYY-MM-DD")
     parser.add_argument("--data-dir", default=str(DATA_DIR))
     parser.add_argument("--alert-file", help="Write a Markdown summary here when changes are found")
     args = parser.parse_args(argv)
 
-    data = Path(args.file).read_bytes() if args.file else download()
-    summary = run(data, args.date, Path(args.data_dir))
+    keys = args.source or list(SOURCES)
+    if args.file and len(keys) != 1:
+        parser.error("--file needs exactly one --source")
 
-    if summary["baseline"]:
-        print(f"{args.date}: baseline saved with {summary['total_designations']} designations.")
-    else:
-        print(
-            f"{args.date}: {summary['total_designations']} designations | "
-            f"{summary['added']} added, {summary['removed']} removed, {summary['amended']} amended."
-        )
+    summaries, failed = [], []
+    # Each list is handled on its own, so a publisher's site being down or a
+    # change to one file format does not stop the other lists being updated.
+    for key in keys:
+        src = SOURCES[key]
+        try:
+            data = _load(key, args.file) if args.file else src.fetch()
+            summary = run(data, args.date, Path(args.data_dir) / key, key)
+        except Exception:
+            failed.append(key)
+            print(f"{src.short}: FAILED, history left unchanged.")
+            traceback.print_exc()
+            continue
+        summaries.append(summary)
+        if summary["baseline"]:
+            print(f"{src.short} {args.date}: baseline saved with {summary['total_designations']} designations.")
+        else:
+            print(
+                f"{src.short} {args.date}: {summary['total_designations']} designations | "
+                f"{summary['added']} added, {summary['removed']} removed, {summary['amended']} amended."
+            )
 
-    if args.alert_file and summary["new_changes"]:
-        Path(args.alert_file).write_text(build_alert(summary), encoding="utf-8")
+    changed = [sm for sm in summaries if sm["new_changes"]]
+    if args.alert_file and changed:
+        Path(args.alert_file).write_text(build_alert(changed), encoding="utf-8")
         print(f"Alert written to {args.alert_file}")
-    return 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

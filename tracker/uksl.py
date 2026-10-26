@@ -10,11 +10,14 @@ Consolidated List closed on 28 January 2026.
 from __future__ import annotations
 
 import csv
-import hashlib
 import io
 import re
 
 import pandas as pd
+
+from tracker.common import (  # noqa: F401  (CHANGE_COLUMNS, TRACKED_FIELDS and diff are re-exported)
+    CHANGE_COLUMNS, TRACKED_FIELDS, _clean, _decode, _hash, _join, diff, download,
+)
 
 SOURCE_URL = "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.csv"
 
@@ -69,44 +72,9 @@ COLUMN_ALIASES = {
 
 REQUIRED_FIELDS = {"unique_id", "name6"}
 
-# Fields compared between two days to decide whether a listing was amended.
-# Each one gets a plain English label for the dashboard.
-TRACKED_FIELDS = {
-    "primary_name": "Primary name",
-    "other_names": "Aliases and name variations",
-    "regime": "Regime",
-    "designation_type": "Designation type",
-    "sanctions_imposed": "Sanctions imposed",
-    "date_designated": "Date designated",
-    "dob": "Date of birth",
-    "nationality": "Nationality",
-    "address_country": "Address country",
-    "position": "Position",
-    "imo_number": "IMO number",
-    "reasons_hash": "Statement of reasons",
-    "other_info_hash": "Other information",
-    "flag": "Flag of ship",
-    "owner_operator": "Owner or operator of ship",
-}
-
 
 def _norm(text: str) -> str:
     return re.sub(r"[^a-z0-9 ]", "", str(text).lower()).strip()
-
-
-def _clean(value) -> str:
-    if value is None or (isinstance(value, float) and pd.isna(value)):
-        return ""
-    return re.sub(r"\s+", " ", str(value)).strip()
-
-
-def _decode(data: bytes) -> str:
-    for encoding in ("utf-8-sig", "cp1252", "latin-1"):
-        try:
-            return data.decode(encoding)
-        except UnicodeDecodeError:
-            continue
-    return data.decode("latin-1", errors="replace")
 
 
 def read_raw(data: bytes) -> pd.DataFrame:
@@ -153,16 +121,6 @@ def read_raw(data: bytes) -> pd.DataFrame:
 def _full_name(rec: pd.Series) -> str:
     parts = [rec[f"name{i}"] for i in range(1, 6)] + [rec["name6"]]
     return " ".join(p for p in parts if p)
-
-
-def _join(values) -> str:
-    items = sorted({v for v in values if v})
-    return "; ".join(items)
-
-
-def _hash(values) -> str:
-    joined = "|".join(sorted({v for v in values if v}))
-    return hashlib.sha1(joined.encode("utf-8")).hexdigest()[:12] if joined else ""
 
 
 def to_designations(raw: pd.DataFrame) -> pd.DataFrame:
@@ -243,62 +201,13 @@ def short_regime(name: str) -> str:
     return "; ".join(one(part) for part in str(name).split("; ") if part) if name else ""
 
 
-CHANGE_COLUMNS = [
-    "run_date", "change_type", "unique_id", "primary_name",
-    "designation_type", "regime", "fields_changed", "detail",
-]
+def fetch() -> bytes:
+    return download(SOURCE_URL)
 
 
-def _short(value: str, limit: int = 120) -> str:
-    return value if len(value) <= limit else value[: limit - 3] + "..."
-
-
-def diff(previous: pd.DataFrame, current: pd.DataFrame, run_date: str) -> pd.DataFrame:
-    """Compare two days of designations and return one row per change."""
-    prev = previous.set_index("unique_id") if len(previous) else pd.DataFrame()
-    curr = current.set_index("unique_id")
-    prev_ids = set(prev.index) if len(prev) else set()
-    curr_ids = set(curr.index)
-
-    changes = []
-
-    def base(uid, row, change_type):
-        return {
-            "run_date": run_date,
-            "change_type": change_type,
-            "unique_id": uid,
-            "primary_name": row["primary_name"],
-            "designation_type": row["designation_type"],
-            "regime": row["regime"],
-            "fields_changed": "",
-            "detail": "",
-        }
-
-    for uid in sorted(curr_ids - prev_ids):
-        row = base(uid, curr.loc[uid], "Added")
-        row["detail"] = f"Sanctions imposed: {curr.loc[uid, 'sanctions_imposed'] or 'not stated'}"
-        changes.append(row)
-
-    for uid in sorted(prev_ids - curr_ids):
-        changes.append(base(uid, prev.loc[uid], "Removed"))
-
-    # Only compare fields both days have. When a new field is added to the
-    # tracker, the first run after that must not flag every listing as amended.
-    comparable = [f for f in TRACKED_FIELDS if f in prev.columns and f in curr.columns] if len(prev) else []
-    for uid in sorted(prev_ids & curr_ids):
-        old, new = prev.loc[uid], curr.loc[uid]
-        changed = [f for f in comparable if str(old[f]) != str(new[f])]
-        if not changed:
-            continue
-        row = base(uid, new, "Amended")
-        row["fields_changed"] = "; ".join(TRACKED_FIELDS[f] for f in changed)
-        notes = []
-        for f in changed:
-            if f.endswith("_hash"):
-                notes.append(f"{TRACKED_FIELDS[f]} text changed")
-            else:
-                notes.append(f"{TRACKED_FIELDS[f]}: '{_short(str(old.get(f, '')))}' to '{_short(str(new.get(f, '')))}'")
-        row["detail"] = " | ".join(notes)
-        changes.append(row)
-
-    return pd.DataFrame(changes, columns=CHANGE_COLUMNS)
+def parse(data: bytes) -> pd.DataFrame:
+    raw = read_raw(data)
+    missing = raw.attrs.get("missing_columns", [])
+    if missing:
+        print("Note: these optional columns were not found in the file: " + ", ".join(missing))
+    return to_designations(raw)
