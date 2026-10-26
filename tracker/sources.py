@@ -29,7 +29,7 @@ class Source:
 SOURCES = {
     "uk": Source("uk", "UK Sanctions List", "UK", "FCDO", "https://www.gov.uk/government/publications/the-uk-sanctions-list",
                  uksl.fetch, uksl.parse, "Open Government Licence v3.0"),
-    "ofac": Source("ofac", "OFAC SDN and Consolidated Lists", "US (OFAC)", "US Treasury, OFAC", ofac.SOURCE_PAGE,
+    "ofac": Source("ofac", "OFAC SDN and Consolidated Lists", "US (OFAC)", "OFAC", ofac.SOURCE_PAGE,
                    ofac.fetch, ofac.parse, "US government work, public domain"),
     "un": Source("un", "UN Security Council Consolidated List", "UN", "UN Security Council", un.SOURCE_PAGE,
                  un.fetch, un.parse, "United Nations"),

@@ -16,67 +16,74 @@ from tracker.uksl import short_regime
 DATA_DIR = Path(os.environ.get("TRACKER_DATA_DIR", Path(__file__).parent / "data"))
 REPO = "https://github.com/Srikanth-nallabilli/uk-sanctions-tracker"
 
-NAVY = "#1e3a8a"
-CHANGE_COLOURS = {"Added": "#059669", "Removed": "#e11d48", "Amended": "#d97706"}
-TYPE_COLOURS = {"Individual": "#1e3a8a", "Entity": "#0d9488", "Ship": "#d97706", "Aircraft": "#7c3aed"}
-SERIES = ["#1e3a8a", "#0d9488", "#d97706", "#e11d48", "#7c3aed", "#0284c7"]
-OTHER = "#cbd5e1"
+# One ink colour for most charts; other colours only where they carry meaning.
+INK = "#1f4e79"
+GREY = "#8a949e"
+CHANGE_COLOURS = {"Added": "#2f6f3e", "Removed": "#a8322d", "Amended": "#9a6a1b"}
+TYPE_COLOURS = {"Individual": "#1f4e79", "Entity": "#8a949e", "Ship": "#c3cbd3", "Aircraft": "#e3e1db"}
+SERIES = ["#1f4e79", "#5c7d9c", "#9fb3c6", "#8a7458", "#c2ae8f", "#4f6d5a"]
+OTHER = "#e3e1db"
 
-st.set_page_config(page_title="Sanctions List Tracker", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="Sanctions List Tracker", page_icon=":material/gavel:", layout="wide")
 
 # ------------------------------------------------------------------ styling
 st.markdown(
     """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-html, body, [class*="css"], .stMarkdown, .stDataFrame, button, input { font-family: 'Inter', sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&family=Source+Serif+4:opsz,wght@8..60,600&display=swap');
+:root { --ink: #1c2329; --muted: #5e6873; --rule: #dcd9d2; --paper: #fbfaf7; --accent: #1f4e79; }
+html, body, [class*="css"], .stMarkdown, .stDataFrame, button, input, select { font-family: 'IBM Plex Sans', sans-serif; }
 #MainMenu, footer, header[data-testid="stHeader"] { visibility: hidden; height: 0; }
-.block-container { padding-top: 1.2rem; padding-bottom: 2rem; max-width: 1280px; }
+.block-container { padding-top: 2rem; padding-bottom: 2rem; max-width: 1180px; }
 
-.hero {
-  background: radial-gradient(circle at 85% 20%, rgba(56,189,248,.25), transparent 40%),
-              linear-gradient(135deg, #0b1f3a 0%, #1e3a8a 60%, #1d4ed8 100%);
-  color: #fff; border-radius: 18px; padding: 30px 34px; margin-bottom: 18px;
-  box-shadow: 0 10px 30px rgba(15,23,42,.18);
-}
-.hero h1 { color: #fff; font-size: 2.05rem; font-weight: 800; margin: 0 0 6px 0; letter-spacing: -.02em; }
-.hero p { color: #cbd5e1; font-size: 1rem; margin: 0 0 16px 0; max-width: 760px; line-height: 1.5; }
-.pill { display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18); color: #e2e8f0; padding: 5px 12px; border-radius: 999px;
-  font-size: .82rem; margin: 0 8px 6px 0; text-decoration: none; }
-.pill a { color: #e2e8f0; text-decoration: none; }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 4px rgba(52,211,153,.25); }
+/* Masthead */
+.masthead h1 { font-family: 'Source Serif 4', Georgia, serif; font-weight: 600; font-size: 2.1rem;
+  color: var(--ink); margin: 0; padding: 0; letter-spacing: -.01em; }
+.masthead p { color: var(--muted); margin: 4px 0 0; font-size: 1rem; }
+.meta { color: var(--muted); font-size: .88rem; margin: 2px 0 22px; }
+.meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #c5d3e0; }
+.meta a:hover { border-color: var(--accent); }
 
-.cards { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; margin-bottom: 8px; }
+/* Headline figures: a plain row separated by rules, no boxes */
+.cards { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); margin: 0 0 18px;
+  border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
 @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, minmax(0,1fr)); } }
-.card { background: #fff; border-radius: 14px; padding: 18px 20px; border: 1px solid #e2e8f0;
-  box-shadow: 0 1px 2px rgba(15,23,42,.04); position: relative; overflow: hidden; }
-.card:before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
-.card .label { color: #64748b; font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
-.card .value { color: #0f172a; font-size: 2rem; font-weight: 800; margin: 4px 0 2px; letter-spacing: -.02em; }
-.card .sub { color: #64748b; font-size: .85rem; }
-.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: .8rem; font-weight: 700; margin-right: 4px; }
+.card { padding: 14px 18px 14px 0; }
+.card + .card { padding-left: 18px; border-left: 1px solid var(--rule); }
+@media (max-width: 900px) { .card:nth-child(3) { padding-left: 0; border-left: 0; } }
+.card .label { color: var(--muted); font-size: .85rem; }
+.card .value { color: var(--ink); font-size: 1.9rem; font-weight: 500; margin: 2px 0;
+  font-variant-numeric: tabular-nums; }
+.card .value.text { font-size: 1.15rem; line-height: 1.35; padding: 7px 0 5px; }
+.card .sub { color: var(--muted); font-size: .82rem; line-height: 1.4; }
+.added { color: #2f6f3e; } .removed { color: #a8322d; } .amended { color: #9a6a1b; }
 
-.section-title { font-size: 1.05rem; font-weight: 700; color: #0f172a; margin: 6px 0 2px; }
-.section-sub { color: #64748b; font-size: .88rem; margin-bottom: 6px; }
-.empty { background: #fff; border: 1px dashed #cbd5e1; border-radius: 14px; padding: 26px; text-align: center; color: #475569; }
-.empty h3 { margin: 0 0 6px; color: #0f172a; font-size: 1.1rem; }
+.section-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.2rem; font-weight: 600;
+  color: var(--ink); margin: 18px 0 2px; }
+.section-sub { color: var(--muted); font-size: .88rem; margin-bottom: 8px; }
+.empty { border-left: 3px solid var(--rule); padding: 4px 0 4px 14px; color: var(--muted); margin: 6px 0 12px; }
+.empty h3 { margin: 0 0 2px; padding: 0; color: var(--ink); font-size: 1rem; font-weight: 600; font-family: inherit; }
 
-.stTabs [data-baseweb="tab-list"] { gap: 6px; border-bottom: 1px solid #e2e8f0; }
-.stTabs [data-baseweb="tab"] { font-weight: 600; padding: 10px 16px; border-radius: 10px 10px 0 0; }
-.stTabs [aria-selected="true"] { background: #fff; color: #1e3a8a; }
-[data-testid="stPlotlyChart"], [data-testid="stDataFrame"] { background: #fff; border-radius: 14px;
-  border: 1px solid #e2e8f0; padding: 8px; }
-/* Radio buttons drawn as pills: the list picker and the period picker. */
-[data-testid="stRadioGroup"] { gap: 6px; }
-[data-testid="stRadioOption"] { background: #fff; border: 1px solid #e2e8f0; border-radius: 999px;
-  padding: 6px 16px; margin: 0; cursor: pointer; }
+/* Tabs: text with an underline, no pills or icons */
+.stTabs [data-baseweb="tab-list"] { gap: 22px; border-bottom: 1px solid var(--rule); }
+.stTabs [data-baseweb="tab"] { padding: 8px 0; background: transparent; }
+.stTabs [data-baseweb="tab"] p { font-size: .95rem; color: var(--muted); }
+.stTabs [aria-selected="true"] p { color: var(--ink); font-weight: 600; }
+.stTabs [data-baseweb="tab-highlight"] { background-color: var(--ink); }
+
+/* Radio buttons drawn as an underlined row: the list picker and the period picker. */
+[data-testid="stRadioGroup"] { gap: 20px; }
+[data-testid="stRadioOption"] { padding: 4px 0; margin: 0; cursor: pointer; border-bottom: 2px solid transparent; }
 [data-testid="stRadioOption"] > div > div:first-child { display: none; }
-[data-testid="stRadioOption"] p { font-weight: 600; color: #334155; }
-[data-testid="stRadioOption"][data-selected="true"] { background: #1e3a8a; border-color: #1e3a8a; }
-[data-testid="stRadioOption"][data-selected="true"] p { color: #fff; }
-.footer { color: #94a3b8; font-size: .8rem; text-align: center; margin-top: 28px; }
-.footer a { color: #64748b; }
+[data-testid="stRadioOption"] p { color: var(--muted); }
+[data-testid="stRadioOption"][data-selected="true"] { border-bottom-color: var(--ink); }
+[data-testid="stRadioOption"][data-selected="true"] p { color: var(--ink); font-weight: 600; }
+.st-key-list_picker { margin-top: 14px; }
+.st-key-list_picker [data-testid="stRadioOption"] p { font-size: 1.05rem; }
+
+[data-testid="stMetricValue"] { font-variant-numeric: tabular-nums; font-weight: 500; }
+.footer { color: var(--muted); font-size: .8rem; margin-top: 36px; padding-top: 12px; border-top: 1px solid var(--rule); }
+.footer a { color: var(--accent); }
 </style>
 """,
     unsafe_allow_html=True,
@@ -85,14 +92,14 @@ html, body, [class*="css"], .stMarkdown, .stDataFrame, button, input { font-fami
 
 def style_fig(fig, height=360, legend=True):
     fig.update_layout(
-        template="plotly_white", height=height, margin=dict(l=10, r=10, t=10, b=10),
-        font=dict(family="Inter, sans-serif", size=12, color="#334155"),
+        template="plotly_white", height=height, margin=dict(l=4, r=4, t=10, b=10),
+        font=dict(family="IBM Plex Sans, sans-serif", size=12, color="#3d4650"),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0, title_text="") if legend else None,
-        showlegend=legend, hoverlabel=dict(font_family="Inter, sans-serif"),
+        showlegend=legend, hoverlabel=dict(font_family="IBM Plex Sans, sans-serif"),
     )
-    fig.update_xaxes(showgrid=False, linecolor="#e2e8f0")
-    fig.update_yaxes(gridcolor="#eef2f7", zeroline=False)
+    fig.update_xaxes(showgrid=False, linecolor="#c9c5bc")
+    fig.update_yaxes(gridcolor="#ebe8e2", zeroline=False)
     return fig
 
 
@@ -143,21 +150,22 @@ SRC = SOURCES[KEY]
 runs, changes, latest = load(KEY, data_version(KEY))
 
 
-def hero(last_checked="", since=""):
-    pills = '<span class="pill"><span class="dot"></span>Live · checked every evening</span>'
-    if last_checked:
-        pills += f'<span class="pill">{SRC.short} last checked {last_checked}</span>'
-    if since:
-        pills += f'<span class="pill">Tracking since {since}</span>'
-    pills += f'<span class="pill"><a href="{SRC.page}" target="_blank">Source: {SRC.publisher} ↗</a></span>'
-    pills += f'<span class="pill"><a href="{REPO}" target="_blank">View code ↗</a></span>'
+def masthead():
     st.markdown(
-        f"""<div class="hero"><h1>🛡️ Sanctions List Tracker</h1>
-        <p>Every evening this tool downloads four official sanctions lists, from the UK (FCDO), the US
-        Treasury (OFAC), the UN Security Council and the EU, compares each one with the day before and
-        records who was added, removed or amended.</p>{pills}</div>""",
+        """<div class="masthead"><h1>Sanctions List Tracker</h1>
+        <p>Daily changes to the UK, US, UN and EU sanctions lists, recorded from the official files.</p></div>""",
         unsafe_allow_html=True,
     )
+
+
+def meta_line(last_checked="", since=""):
+    parts = [SRC.name, f'source: <a href="{SRC.page}" target="_blank">{SRC.publisher}</a>']
+    if last_checked:
+        parts.append(f"last checked {last_checked}")
+    if since:
+        parts.append(f"tracked since {since}")
+    parts.append(f'<a href="{REPO}" target="_blank">code on GitHub</a>')
+    st.markdown(f'<div class="meta">{" · ".join(parts)}</div>', unsafe_allow_html=True)
 
 
 def fmt_date(value):
@@ -169,12 +177,14 @@ def pick_list():
     st.query_params["list"] = st.session_state["list"]
 
 
+masthead()
+with st.container(key="list_picker"):
+    st.radio("List", list(SOURCES), key="list", horizontal=True, label_visibility="collapsed",
+             format_func=lambda k: SOURCES[k].short, on_change=pick_list)
 if runs is not None:
-    hero(fmt_date(runs.iloc[-1]["run_date"]), fmt_date(runs.iloc[0]["run_date"]))
+    meta_line(fmt_date(runs.iloc[-1]["run_date"]), fmt_date(runs.iloc[0]["run_date"]))
 else:
-    hero()
-st.radio("List", list(SOURCES), key="list", horizontal=True, label_visibility="collapsed",
-         format_func=lambda k: SOURCES[k].short, on_change=pick_list)
+    meta_line()
 
 if runs is None:
     st.markdown(f'<div class="empty"><h3>No data yet for the {SRC.name}</h3>Run '
@@ -198,46 +208,46 @@ regime_count = latest["regime_short"].str.split("; ").explode().nunique()
 baseline_only = len(runs) == 1
 
 
-def chip(text, colour):
-    return f'<span class="chip" style="background:{colour}1a;color:{colour}">{text}</span>'
+def latest_check():
+    """The latest run as a sentence: 'No changes', or '3 added, 1 amended'."""
+    if baseline_only:
+        return "First snapshot saved", "Daily comparisons start with the next run"
+    counts = [(int(last[k]), k) for k in ("added", "removed", "amended") if int(last[k])]
+    text = ", ".join(f'<span class="{k}">{n:,} {k}</span>' for n, k in counts) or "No changes"
+    return text, f"in the check on {fmt_date(last['run_date'])}"
 
 
-daily_sub = ("First check saved. Comparisons start tonight."
-             if baseline_only else f"Changes found on {fmt_date(last['run_date'])}")
+check_text, check_sub = latest_check()
 type_parts = [f"{types.get(t, 0):,} {label}" for t, label in
               [("Individual", "individuals"), ("Entity", "entities"), ("Ship", "ships"), ("Aircraft", "aircraft")]
               if t in types or t != "Aircraft"]
 if HAS_DATES:
-    second_card = f"""<div class="card" style="--accent:#0d9488"><div class="label">Designated in {this_year}</div>
+    second_card = f"""<div class="card"><div class="label">Designated in {this_year}</div>
     <div class="value">{year_count:,}</div>
     <div class="sub">{last_30} in the last 30 days · {prev_year_count:,} in {this_year - 1}</div></div>"""
 else:
     added_total = int(changes["change_type"].eq("Added").sum()) if not changes.empty else 0
-    second_card = f"""<div class="card" style="--accent:#0d9488"><div class="label">Added since tracking began</div>
+    second_card = f"""<div class="card"><div class="label">Added since tracking began</div>
     <div class="value">{added_total:,}</div>
     <div class="sub">{SRC.publisher} does not publish designation dates</div></div>"""
 st.markdown(
     f"""<div class="cards">
-  <div class="card" style="--accent:{NAVY}"><div class="label">Designations</div>
+  <div class="card"><div class="label">Designations</div>
     <div class="value">{len(latest):,}</div>
     <div class="sub">{' · '.join(type_parts)}</div></div>
   {second_card}
-  <div class="card" style="--accent:#7c3aed"><div class="label">Active regimes</div>
+  <div class="card"><div class="label">Active regimes</div>
     <div class="value">{regime_count}</div>
     <div class="sub">Largest: {latest['main_regime'].value_counts().index[0]} ({latest['main_regime'].value_counts().iloc[0]:,})</div></div>
-  <div class="card" style="--accent:#d97706"><div class="label">Latest daily check</div>
-    <div class="value" style="font-size:1.5rem;padding:8px 0 6px">
-      {chip(f"+{int(last['added'])} added", CHANGE_COLOURS['Added'])}
-      {chip(f"−{int(last['removed'])} removed", CHANGE_COLOURS['Removed'])}
-      {chip(f"~{int(last['amended'])} amended", CHANGE_COLOURS['Amended'])}</div>
-    <div class="sub">{daily_sub}</div></div>
+  <div class="card"><div class="label">Latest daily check</div>
+    <div class="value text">{check_text}</div>
+    <div class="sub">{check_sub}</div></div>
 </div>""",
     unsafe_allow_html=True,
 )
 
 tab_overview, tab_recent, tab_daily, tab_fleet, tab_quality, tab_search, tab_compare = st.tabs(
-    ["📊 Overview", "🆕 Recent activity", "🔁 Daily changes", "🚢 Shadow fleet", "✅ Data quality",
-     "🔎 Search the list", "🌐 Compare lists"])
+    ["Overview", "Recent activity", "Daily changes", "Ships", "Data quality", "Search", "Compare lists"])
 
 # Moments that explain the big jumps in the monthly chart.
 EVENTS = [  # (date, label, height on the chart so labels close together do not overlap)
@@ -275,11 +285,11 @@ with tab_overview:
         fig.update_layout(bargap=0.15)
         for day, label, height in EVENTS:
             fig.add_shape(type="line", x0=day, x1=day, y0=0, y1=height, yref="paper",
-                          line=dict(color="#475569", width=1, dash="dot"))
+                          line=dict(color="#8a949e", width=1, dash="dot"))
             fig.add_annotation(x=day, y=height, yref="paper", text=label, showarrow=False,
                                xanchor="right" if day >= "2025-06-01" and height == 0.88 else "left",
-                               yanchor="top", xshift=4, font=dict(size=11, color="#475569"),
-                               bgcolor="rgba(255,255,255,.85)")
+                               yanchor="top", xshift=4, font=dict(size=11, color="#5e6873"),
+                               bgcolor="rgba(251,250,247,.9)")
         st.plotly_chart(style_fig(fig, 380), width="stretch")
 
     section("Where designated people and companies are linked to",
@@ -291,10 +301,10 @@ with tab_overview:
                       .drop_duplicates(["unique_id", "country"])["country"].value_counts().reset_index())
     country_counts.columns = ["Country", "Designations"]
     fig = px.choropleth(country_counts, locations="Country", locationmode="country names",
-                        color="Designations", color_continuous_scale=["#dbeafe", "#1e3a8a"],
+                        color="Designations", color_continuous_scale=["#e8edf2", "#1f4e79"],
                         hover_name="Country")
     fig.update_geos(showframe=False, showcoastlines=False, projection_type="natural earth",
-                    bgcolor="rgba(0,0,0,0)", landcolor="#f1f5f9", showland=True)
+                    bgcolor="rgba(0,0,0,0)", landcolor="#efede8", showland=True)
     fig.update_layout(coloraxis_colorbar=dict(title="", thickness=12))
     st.plotly_chart(style_fig(fig, 420, legend=False), width="stretch")
 
@@ -303,7 +313,7 @@ with tab_overview:
         section("Designations by regime")
         by_regime = latest["main_regime"].value_counts().head(12).sort_values()
         fig = go.Figure(go.Bar(x=by_regime.values, y=by_regime.index, orientation="h",
-                               marker_color=NAVY, text=by_regime.values, textposition="outside"))
+                               marker_color=INK, text=by_regime.values, textposition="outside"))
         st.plotly_chart(style_fig(fig, 420, legend=False), width="stretch")
     with right:
         section("Who is on the list")
@@ -318,7 +328,7 @@ with tab_overview:
         section("Most common nationalities", "Individuals where a nationality is given")
         nat = (latest.loc[latest["nationality"] != "", "nationality"].str.split("; ").explode()
                .value_counts().head(10).sort_values())
-        fig = go.Figure(go.Bar(x=nat.values, y=nat.index, orientation="h", marker_color="#0d9488",
+        fig = go.Figure(go.Bar(x=nat.values, y=nat.index, orientation="h", marker_color=INK,
                                text=nat.values, textposition="outside"))
         st.plotly_chart(style_fig(fig, 380, legend=False), width="stretch")
     with right:
@@ -331,7 +341,7 @@ with tab_overview:
             section("Most common address countries", "Countries named in a listed address")
             measures = latest["address_country"].str.split("; ").explode()
         measures = measures[measures != ""].value_counts().head(8).sort_values()
-        fig = go.Figure(go.Bar(x=measures.values, y=measures.index, orientation="h", marker_color="#7c3aed",
+        fig = go.Figure(go.Bar(x=measures.values, y=measures.index, orientation="h", marker_color=INK,
                                text=measures.values, textposition="outside"))
         st.plotly_chart(style_fig(fig, 380, legend=False), width="stretch")
 
@@ -377,7 +387,7 @@ with tab_recent:
 with tab_daily:
     if changes.empty:
         st.markdown(
-            f"""<div class="empty"><h3>⏳ The tracker's own daily comparisons start tonight</h3>
+            f"""<div class="empty"><h3>The tracker's own daily comparisons start with the next run</h3>
             The first snapshot of {len(latest):,} designations was saved on {fmt_date(runs.iloc[0]['run_date'])}.
             From this evening, every addition, removal and amendment the tracker finds will appear here
             with the fields that changed.</div>""",
@@ -422,14 +432,14 @@ with tab_daily:
                              "unique_id": "Unique ID"}),
             hide_index=True, width="stretch",
         )
-        st.download_button("⬇ Download the full change log (CSV)", changes.to_csv(index=False).encode("utf-8"),
+        st.download_button("Download the full change log (CSV)", changes.to_csv(index=False).encode("utf-8"),
                            file_name=f"{KEY}_sanctions_changes.csv", mime="text/csv")
 
 # ------------------------------------------------------------------ shadow fleet
 with tab_fleet:
     ships = latest[latest["designation_type"] == "Ship"].copy()
     st.markdown(
-        f"""<div class="section-sub" style="font-size:.95rem">The {SRC.name} includes <b>{len(ships):,}
+        f"""<div class="section-sub" style="font-size:.95rem">The {SRC.short} list includes <b>{len(ships):,}
         ships</b>. Many of the ships designated in recent years are tankers in the "shadow fleets" carrying
         Russian and Iranian oil. These vessels often change flag and owner to stay hidden, so flags,
         ownership and age are the details that matter for trade finance and maritime screening.</div>""",
@@ -455,13 +465,13 @@ with tab_fleet:
         ships_sub = f"{designated_2026} added in {this_year}" if HAS_DATES else f"{ships['imo_number'].ne('').sum():,} with an IMO number"
         st.markdown(
             f"""<div class="cards">
-  <div class="card" style="--accent:{NAVY}"><div class="label">Designated ships</div>
+  <div class="card"><div class="label">Designated ships</div>
     <div class="value">{len(ships):,}</div><div class="sub">{ships_sub}</div></div>
-  <div class="card" style="--accent:#d97706"><div class="label">Changed flag before</div>
+  <div class="card"><div class="label">Changed flag before</div>
     <div class="value">{hopped / max(len(ships), 1):.0%}</div><div class="sub">{hopped:,} ships list at least one previous flag</div></div>
-  <div class="card" style="--accent:#e11d48"><div class="label">Median age</div>
+  <div class="card"><div class="label">Median age</div>
     <div class="value">{median_age:.0f} yrs</div><div class="sub">{over_15:,} ships are 15 years or older</div></div>
-  <div class="card" style="--accent:#0d9488"><div class="label">Distinct current flags</div>
+  <div class="card"><div class="label">Distinct current flags</div>
     <div class="value">{split_values(ships['flag']).nunique()}</div><div class="sub">across the designated fleet</div></div>
 </div>""",
             unsafe_allow_html=True,
@@ -471,14 +481,14 @@ with tab_fleet:
         with left:
             section("Current flag", "The country each ship is believed to be registered in today")
             flags = split_values(ships["flag"]).value_counts().head(12).sort_values()
-            fig = go.Figure(go.Bar(x=flags.values, y=flags.index, orientation="h", marker_color=NAVY,
+            fig = go.Figure(go.Bar(x=flags.values, y=flags.index, orientation="h", marker_color=INK,
                                    text=flags.values, textposition="outside"))
             st.plotly_chart(style_fig(fig, 400, legend=False), width="stretch")
         with right:
             section("Flag hopping", "Number of previous flags listed for each ship")
             hops = ships["n_prev_flags"].clip(upper=5).value_counts().sort_index()
             labels = [f"{int(i)}{'+' if i == 5 else ''}" for i in hops.index]
-            fig = go.Figure(go.Bar(x=labels, y=hops.values, marker_color="#d97706", text=hops.values,
+            fig = go.Figure(go.Bar(x=labels, y=hops.values, marker_color=INK, text=hops.values,
                                    textposition="outside"))
             fig.update_xaxes(title="Previous flags")
             st.plotly_chart(style_fig(fig, 400, legend=False), width="stretch")
@@ -487,13 +497,13 @@ with tab_fleet:
         with left:
             section("Ship types")
             kinds = ships["ship_type_clean"].replace("", "Not stated").value_counts().head(8).sort_values()
-            fig = go.Figure(go.Bar(x=kinds.values, y=kinds.index, orientation="h", marker_color="#0d9488",
+            fig = go.Figure(go.Bar(x=kinds.values, y=kinds.index, orientation="h", marker_color=INK,
                                    text=kinds.values, textposition="outside"))
             st.plotly_chart(style_fig(fig, 360, legend=False), width="stretch")
         with right:
             section("Age of the fleet", "Year each ship was built")
             fig = px.histogram(ships.dropna(subset=["built"]), x="built", nbins=30,
-                               color_discrete_sequence=["#e11d48"])
+                               color_discrete_sequence=[INK])
             fig.update_xaxes(title="Year built")
             fig.update_yaxes(title="Ships")
             st.plotly_chart(style_fig(fig, 360, legend=False), width="stretch")
@@ -504,7 +514,7 @@ with tab_fleet:
                          .assign(Month=lambda d: d["designated"].dt.to_period("M").dt.to_timestamp())
                          .groupby("Month").size().reset_index(name="Ships"))
             fig = px.bar(per_month[per_month["Month"] >= "2023-01-01"], x="Month", y="Ships",
-                         color_discrete_sequence=[NAVY])
+                         color_discrete_sequence=[INK])
             st.plotly_chart(style_fig(fig, 300, legend=False), width="stretch")
 
         section("Fleet register", "Search by ship name, IMO number, flag or owner")
@@ -577,13 +587,13 @@ with tab_quality:
 
     st.markdown(
         f"""<div class="cards">
-  <div class="card" style="--accent:#059669"><div class="label">Strong identifiers</div>
+  <div class="card"><div class="label">Strong identifiers</div>
     <div class="value">{strong:.0%}</div><div class="sub">individuals with 3 or 4 of DOB, nationality, place of birth, ID</div></div>
-  <div class="card" style="--accent:#e11d48"><div class="label">Weak identifiers</div>
+  <div class="card"><div class="label">Weak identifiers</div>
     <div class="value">{weak:.0%}</div><div class="sub">individuals with 1 or none of these</div></div>
-  <div class="card" style="--accent:#d97706"><div class="label">Name only</div>
+  <div class="card"><div class="label">Name only</div>
     <div class="value">{name_only:,}</div><div class="sub">individuals with none of the four</div></div>
-  <div class="card" style="--accent:{NAVY}"><div class="label">Ships with IMO</div>
+  <div class="card"><div class="label">Ships with IMO</div>
     <div class="value">{imo_share}</div><div class="sub">the one identifier that never changes</div></div>
 </div>""",
         unsafe_allow_html=True,
@@ -595,7 +605,7 @@ with tab_quality:
             plural = {"Individual": "Individuals", "Entity": "Entities", "Ship": "Ships"}[kind]
             section(plural, f"{int(masks[kind].sum()):,} listings")
             pct = pd.Series({f: m[masks[kind]].mean() * 100 for f, m in fields.items()}).sort_values()
-            colours = ["#059669" if v >= 75 else "#d97706" if v >= 40 else "#e11d48" for v in pct.values]
+            colours = ["#2f6f3e" if v >= 75 else "#9a6a1b" if v >= 40 else "#a8322d" for v in pct.values]
             fig = go.Figure(go.Bar(x=pct.values, y=pct.index, orientation="h", marker_color=colours,
                                    text=[f"{v:.0f}%" for v in pct.values], textposition="inside",
                                    insidetextanchor="end", textfont=dict(color="white", size=12)))
@@ -607,7 +617,7 @@ with tab_quality:
               .unstack(fill_value=0).reindex(columns=["Strong", "Moderate", "Weak"], fill_value=0))
     by_reg = by_reg[indiv["main_regime"].value_counts().reindex(by_reg.index) >= 30].sort_values("Weak")
     fig = go.Figure()
-    for level, colour in [("Strong", "#059669"), ("Moderate", "#d97706"), ("Weak", "#e11d48")]:
+    for level, colour in [("Strong", "#2f6f3e"), ("Moderate", "#9a6a1b"), ("Weak", "#a8322d")]:
         fig.add_bar(y=by_reg.index, x=by_reg[level] * 100, name=level, orientation="h", marker_color=colour)
     fig.update_layout(barmode="stack")
     fig.update_xaxes(ticksuffix="%", range=[0, 100])
@@ -696,7 +706,7 @@ with tab_compare:
         text = matrix.map(lambda v: "" if pd.isna(v) else f"{v:.0f}%")
         fig = go.Figure(go.Heatmap(
             z=matrix.values, x=matrix.columns, y=matrix.index, text=text.values, texttemplate="%{text}",
-            zmin=0, zmax=100, colorscale=[[0, "#eff6ff"], [1, "#1e3a8a"]], showscale=False, xgap=3, ygap=3,
+            zmin=0, zmax=100, colorscale=[[0, "#f1efea"], [1, "#1f4e79"]], showscale=False, xgap=3, ygap=3,
             hovertemplate="%{text} of the %{y} list is also on %{x}<extra></extra>"))
         fig.update_xaxes(side="top", title="Also found on")
         fig.update_yaxes(autorange="reversed", title="Designations on")
