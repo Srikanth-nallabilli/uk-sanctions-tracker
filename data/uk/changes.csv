@@ -65,3 +65,9 @@ run_date,change_type,unique_id,primary_name,designation_type,regime,fields_chang
 2026-10-26,Added,SUD0070,Mustafa Abdullah Ahmed SHENIBAT,Individual,The Sudan (Sanctions) (EU Exit) Regulations 2020,,Sanctions imposed: Asset freeze; Director Disqualification Sanction; Travel Ban
 2026-10-26,Added,SUD0071,Al-Nour Ahmed ADAM,Individual,The Sudan (Sanctions) (EU Exit) Regulations 2020,,Sanctions imposed: Asset freeze; Director Disqualification Sanction; Travel Ban
 2026-10-26,Added,SUD0072,Ali RIZQALLAH,Individual,The Sudan (Sanctions) (EU Exit) Regulations 2020,,Sanctions imposed: Asset freeze; Director Disqualification Sanction; Travel Ban
+2026-10-27,Removed,AQD0155,BASSAM AHMAD AL-HASRI,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,,
+2026-10-27,Removed,AQD0209,IYAD NAZMI SALIH KHALIL,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,,
+2026-10-27,Removed,AQD0314,SHAFI SULTAN MOHAMMED AL-AJMI,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,,
+2026-10-27,Amended,AQD0167,EMILIE EDWIGE KONIG,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,Address country; Other information,Address country: 'Syria' to 'France' | Other information text changed
+2026-10-27,Amended,AQD0284,OUMAR DIABY,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,Aliases and name variations; Other information,Aliases and name variations: 'Omsen; Oumar Omsen' to 'Omar Omsen; Omsen' | Other information text changed
+2026-10-27,Amended,AQD0286,PETER CHERIF,Individual,Isil (Da'esh) and Al-Qaeda (United Nations Sanctions) (EU Exit) Regulations 2019,Aliases and name variations; Address country; Other information,Aliases and name variations: '' to 'Abou Hamza' | Address country: 'Yemen' to 'France' | Other information text changed
