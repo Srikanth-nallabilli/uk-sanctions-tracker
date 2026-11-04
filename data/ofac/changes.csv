@@ -12,3 +12,1098 @@ run_date,change_type,unique_id,primary_name,designation_type,regime,fields_chang
 2026-10-28,Added,58888,"KIM, Hyo Dong",Individual,DPRK2,,
 2026-10-28,Added,58889,"OBERTAS, Vitold Viktorovich",Individual,DPRK2,,
 2026-10-28,Added,59069,MINISTRY OF DEFENCE OF THE REPUBLIC OF RWANDA,Entity,DRCONGO,,
+2026-11-04,Added,59050,FUGO GROUND SERVICES INC,Entity,IRAN-EO13902,,
+2026-11-04,Added,59053,"SHARMA, Suniel Kumar",Individual,IRAN-EO13902,,
+2026-11-04,Added,59054,"SHAHID, Jaspreet Preeti",Individual,IRAN-EO13902,,
+2026-11-04,Added,59055,OCEANIEK TECHNOLOGIES INDIA,Entity,IRAN-EO13902,,
+2026-11-04,Added,59056,"DHIMAN, Ashwani Kumar",Individual,IRAN-EO13902,,
+2026-11-04,Added,59057,"SINGH, Ishwinder",Individual,IRAN-EO13902,,
+2026-11-04,Added,59058,ESWATINI MARITIME AFFAIRS AND INTERNATIONAL SHIP REGISTRY PTE. LTD.,Entity,IRAN-EO13902,,
+2026-11-04,Added,59059,PRECEPT TRENDS PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59060,POLYNESIA MARITIME PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59061,ALEXARYA FINSERV PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59062,ALEXARYA MEDIA AND ENTERTAINMENT PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59063,ARYAVART SHIP MANAGEMENT PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59064,VIHARABOATING PRIVATE LIMITED,Entity,IRAN-EO13902,,
+2026-11-04,Added,59065,ARYAVART MARITIME AND EDUCATIONAL TRUST,Entity,IRAN-EO13902,,
+2026-11-04,Added,59090,"DOMULLODZHANOV, Alisher",Individual,IRAN-CON-ARMS-EO,,
+2026-11-04,Amended,13131,EGHTESAD NOVIN BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13133,PASARGAD BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13134,KARAFARIN BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13135,SAMAN BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13136,SARMAYEH BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13138,BANK-E SHAHR,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13141,TOURISM BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13142,IRAN ZAMIN BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13143,MEHR IRAN CREDIT UNION BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13145,TOSEE TAAVON BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,13146,ISLAMIC REGIONAL COOPERATION BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,16017,AMIN INVESTMENT BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,17013,VTB BANK PUBLIC JOINT STOCK COMPANY,Entity,IRAN-EO13902; RUSSIA-EO14024; UKRAINE-EO13662,Other information,Other information text changed
+2026-11-04,Amended,17154,KHAVARMIANEH BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,17156,GHARZOLHASANEH RESALAT BANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,26118,PROMSYRIOIMPORT,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,26121,"DOGAEV, Andrey",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,26884,BS COMPANY OFFSHORE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,29798,"SADIQABADI, Alireza",Individual,IFSR; SDGT,Other information,Other information text changed
+2026-11-04,Amended,4633,BANK MASKAN,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,4635,BANK REFAH KARGARAN,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,4639,BANK KESHAVARZI IRAN,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,50107,TINOS I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51320,YURIMAGUAS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51349,TONIL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51350,CERES I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51351,LIGHTSHIP MANAGEMENT LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51352,FIONA II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51353,YURI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51354,CERES SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51355,EUNOMIA LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51360,LADY LUCY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51361,ELVA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51362,LUFINDO HOLDING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51363,INAYA SHIP MANAGEMENT PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51365,JAYA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51366,GALILEOS MARINE SERVICES L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51367,MASAL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51368,FT ISLAND,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51369,OCEAN GLORY GIANT OGG SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51371,"GAFFODIL CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51372,PHONIX,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51373,VISION SHIP MANAGEMENT LLP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51374,LARA II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51375,RIO NAPO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51376,OLIVE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51377,TIGHTSHIP SHIPPING MANAGEMENT (OPC) PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51378,BLACK PANTHER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51379,LIONESS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51382,BERTHA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51383,SHANGHAI LEGENDARY SHIP MANAGEMENT COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51384,MIN HANG,Ship,IRAN-EO13902; RUSSIA-EO14024; UKRAINE-EO13662,Other information,Other information text changed
+2026-11-04,Amended,51385,VESNA,Ship,IRAN-EO13902; RUSSIA-EO14024; UKRAINE-EO13662,Other information,Other information text changed
+2026-11-04,Amended,51386,SHANGHAI FUTURE SHIP MANAGEMENT CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51387,MEROPE,Ship,IRAN-EO13902; RUSSIA-EO14024; UKRAINE-EO13662,Other information,Other information text changed
+2026-11-04,Amended,51389,VERONICA III,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51391,CONSTELLATION MARITIME SERVICES LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,51572,VANITY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52269,ROSE SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52270,JOURNEY INVESTMENT COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52271,MS ENOLA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52284,"MASTER JOINT CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52285,MS ANGIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52287,MS MELENIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52288,PASSADA MARITIME LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52496,ARSA GAS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52497,"EMAMJOMEH, Seyed Asadoollah",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52498,"EMAMJOMEH, Meisam",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52499,NILGON PARSA CASPIAN SHIPPING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52500,PARSA FIDAR PAYDAR ENGINEERING AND TECHNOLOGY COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52501,PARSA SALAKH QESHM INDUSTRIAL COMPLEX,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52502,CASPIAN PETROCHEMICAL FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52503,PARSA TRABAR CASPIAN INTERNATIONAL TRANSPORTATION COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52504,PEARL PETROCHEMICAL FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52505,PARSA TRABAR PERSIA INTERNATIONAL TRANSPORTATION COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52506,PASAR GAS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52507,PASAR GAS NOVIN TRADING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52508,WORLDWIDE LPG LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52509,PETRO PARSA CASPIAN IRANIAN COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52539,"YOUNG FOLKS INTERNATIONAL TRADING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52543,CH BILLION,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52574,FLUX MARITIME LLP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52586,NYCITY SHIPMANAGEMENT CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52589,URGANE I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52853,LUCKY OCEAN SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52854,STAR FOREST,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52937,CASINOVA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52938,LE MONDE MARINE SERVICES LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52939,PETRONIX ENERGY TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52940,IRANIAN OIL TERMINALS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52941,PETROQUIMICO FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52942,"MIRI, Sayyed Ali",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52943,"MOALEMI, Ali",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52944,SUNNY LAND TRADING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52945,LYDIA II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52946,GREEN GARDEN TRADING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52947,"GERAMI, Gholamhossein",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52948,AYDEN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52949,ARTEMIS HEART LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52950,"BOVARD, Hamid",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52951,FIONA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,52952,"ASADROUZ, Abbass",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53094,"PAKNEJAD, Mohsen",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53095,SEA SERVICES PROVIDERS NV,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53096,LEXI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53097,TURQUOISE SEA MARINE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53098,LYDYA N,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53099,AREN SHIP MANAGEMENT,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53100,FALLON SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53101,POLARIS 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53134,HONG KONG HESHUN TRANSPORTATION TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53135,PEACE HILL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53136,"SEASKY MARINE CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53137,SEASKY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53138,CELESTITE MARITIME INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53139,MARINE SOLUTION PVT LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53140,NESO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53141,SHANNON II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53142,NEPTUNE MARINE LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53143,UNITED TANKERS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53144,HUAXIA TRADING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53145,ITAUGUA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53146,ITAUGUA SERVICES INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53147,LAKE VIEW SHIP MANAGEMENT PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53148,BLUE GULF,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53149,"SUN SCIENCE INTERNATIONAL CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53150,CORONA FUN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53303,"SHANDONG SHOUGUANG LUQING PETROCHEMICAL CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53319,CITYWALLSHIP MANAGEMENT CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53320,PLACENCIA SERVICES INCORPORATION,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53322,MONTROSE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53324,"JETEE CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53326,BRITNEY RYDER LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53327,VOLANS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53328,SEAPALM SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53329,TITAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53356,ASTRID MENKS LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53361,NATALINA 7,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53363,CANES VENATICI LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53379,CATALINA 7,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53380,SEA BREEZE SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53381,SETASEAN SHIP MANAGEMENT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53383,LYRARI GROUP LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53396,ZENITH BRIDGE INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53571,BRAVA LAKE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53607,VIOLA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53611,AURORA RILEY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53613,"WANG, Xueqing",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53818,OCEANIC ORBIT INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53819,PRO MISSION SDN BHD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53821,RESTON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53874,"BRAR, Jugwinder Singh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53875,PRIME TANKERS LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53876,GLORY INTERNATIONAL FZ-LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53879,GLOBAL TANKERS PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53882,B AND P SOLUTIONS PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53885,GLOBAL ELEGANCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53886,GLOBAL EMERALD,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53887,GLOBAL PEAK,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53888,GLOBAL RANI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53889,GLOBAL STAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53890,GLOBAL ACE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53891,GLOBAL EVEREST,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53892,GLOBAL ANGEL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53893,GLOBAL FALCON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53894,GLOBAL BEAUTY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53895,GLOBAL MAHARANI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53896,GLOBAL DIGNITY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53897,GLORY STAR I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53898,HARMONY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53899,GLOBAL EAGLE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53900,GLOBAL HAWK,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53901,OCEAN PRINCESS 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53902,GLOBAL PEACE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53903,CHIL 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53904,GLOBAL CREST,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53905,GLOBAL ASPHALT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53906,GLOBAL DOMINANCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53907,MIRAGE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53908,GLOBAL GENESIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53909,LUANDA 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53910,NADIYA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53911,PURNA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53916,SIMRAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53924,BESTLA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53925,EGRET,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53926,"DEXIANG SHIPPING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53927,BESTLA COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53928,RANI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53929,CIVIC CAPITAL SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53930,STARBOARD SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53931,NYANTARA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53932,"SHANDONG SHENGXING CHEMICAL CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,53979,"AGARWAL, Ketan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54061,"VIEGAS, Lincoln Francisco",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54117,NISSHO LINES INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54118,THANE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54119,EMBRACE QUE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54120,IMPALAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54137,"BAOGANG DONGYING DONGGANG LOGISTICS AND WAREHOUSING CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54138,"SHANDONG JINGANG PORT CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54140,STAR TWINKLE SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54141,"HONG KONG PRIME TRADING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54142,SKADI LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54143,PROPITIOUS FOREVER TRADING CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54144,STAR TWINKLE 6,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54145,LAMD,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54146,SKADI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54147,BIG MAG,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54234,"ZARRINGHALAM, Mansour",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54235,BSTSHESH HK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54236,NASSER ZARRIN GHALAM AND PARTNERS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54237,CHUNLING HK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54238,FITAGE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54239,GUTOWN TRADE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54240,HERO COMPANION LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54241,KINLERE TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54242,KONOSAG TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54243,LASTSIX TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54244,MAGICAL EAGLE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54245,MARLENA TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54246,PLZCOME LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54247,PRETTYANDY TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54248,PROFU COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54249,QUESTANO HK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54250,SALEDIGE TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54251,XIA TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54252,YIMINAI AUTOPARTS TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54253,MANSOUR ZARRIN GHALAM AND PARTNERS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54254,"ZARRINGHALAM, Fazlolah",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54255,"MESHKAT, Farahnaz",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54256,"ZARRINGHALAM, Nasser",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54257,"SHETABAN, Hossein",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54258,ZARRIN GHALAM AND PARTNERS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54259,ZARRIN TEHRAN INVESTMENT COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54260,"ZARRINGHALAM, Mitra",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54261,KIMIA SADR PASARGAD COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54262,"ZARRINGHALAM, Pouria",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54263,"SOLTANIZADEH, Parviz",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54264,WIDE VISION GENERAL TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54265,J.S SERENITY TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54266,GOLDEN PEN GENERAL TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54269,"ZHANG, Yu",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54270,"KUHI, Fatemeh Sarlak",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54275,TRANS ARCTIC GLOBAL MARINE SERVICES PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54276,THEMIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54277,THEMIS LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54294,"SHANDONG JINCHENG PETROCHEMICAL GROUP CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54295,FOTIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54316,FOTIS LINES INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54317,EGIR SHIPPING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54318,VIZURI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54334,BETENSH GLOBAL INVESTMENT LIMITED AND DONG DONG SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54336,BIANCA JOYSEL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54337,ARES SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54338,REGAL LIBERTY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54339,HONG KONG HANGSHUN SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54340,"U BEACON SHIPPING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54341,ARES,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54342,GIANT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54343,KONGM,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54344,ADELINE G,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54401,"SAID, Salim Ahmed",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54406,VS OIL TERMINAL FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54409,VS TANKERS FREE ZONE ENTITY - F.Z.E DMCC BRANCH,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54410,DIJILAH,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54412,RHINE SHIPPING DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54413,VS PETROLEUM DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54414,THE WILLETT HOTEL LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54415,ROBINBEST LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54783,WESER SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54784,"DERAKHSHAN, Alireza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54785,TRIS GAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54787,"SHAMKHANI, Mohammad Hossein",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54789,"HABIBULLAH HABIBULLAH, Mohamed Rafeek",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54790,XANTE LINE INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54791,XANTE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54792,YUG SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54793,CAPTAIN DYNASTY SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54794,ZALE SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54795,YUG,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54796,ZALE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54797,TEODOR SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54798,NEO SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54799,URANUS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54801,TAGOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54802,"PATEL, Pankaj Nagjibhai",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54803,"CADEDDU, Elisabetta",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54804,ABHRA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54805,APATE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54806,NEMRUT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54807,OMNI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54808,AETHER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54809,TOA PAYOH,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54810,SHREEJI GEMS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54811,BRIONT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54812,"KURIAN, Jacob",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54813,MANASLU,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54814,"NAIR, Anil Kumar Panackal Narayanan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54815,TASSOS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54816,CORA LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54817,CHARMINAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54819,TETON GLOBAL TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54820,EVENTIN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54821,CARLINGTON PETROCHEM FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54822,ETANA TRADING DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54823,SIMBA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54824,ULTIMATE SPIRIT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54825,STAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54826,MAX ENERGY FUEL TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54827,TEX,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54828,TIMON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54829,G M C G SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54830,YOGI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54831,ZAGOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54832,GMCG LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54833,"MUHSIN AL-AZZAWI, Thamoud Mohammed",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54834,"VARELA DE LEON, Hector",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54835,INTERNATIONAL SHIPPING BUREAU L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54837,VANI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54838,GMCG HOLDING CORP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54839,MILAVOUS GROUP LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54840,GREEN ENERGY CHEMICALS ENERJI KIMYASALLARI SANAYI TICARET ANONIM SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54841,MILAVOUS COMMODITIES HOLDING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54842,MILAVOUS HOLDING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54843,NOVA LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54844,ELKE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54862,REEL SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54863,OCEAN LEONID INVESTMENTS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54864,NEST WISE PETROLEUM L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54865,DHANU,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54866,AEOLUS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54867,OCEAN LEONID INVESTMENTS AG,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54868,CERUS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54869,ACE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54870,OCEAN LEONID INVESTMENTS SINGAPORE PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54871,ROB,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54872,OENERGY COMMODITIES DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54873,GAUJA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54874,NEST WISE TRADING S.R.L.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54875,NEST WISE TRADING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54876,TB ANPING,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54878,ARMADA GLOBAL SHIPPING DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54879,KOBAN SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54880,FRACTAL MARINE DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54881,PROGWIN SHIPPING SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54882,MEUSE SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54883,BACKSTREET PALM CORP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54884,"PHILIPPE, Mathieu Alain Michel",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54885,BPT SHIPPING CO L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54886,MAHADEV MARITIME INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54887,KYLO SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54888,WESTANKER LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54889,IRIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54890,WESTANKER DENIZCILIK VE TICARET LIMITED SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54891,YODAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54892,CRIOS SHIPPING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54893,OKA SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54894,DRACO BUREN SHIPPING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54895,THE ZULU SHIPS MANAGEMENT AND OPERATION - SOLE PROPRIETORSHIP L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54896,WANTA SHIPPING L.L.C-FZ,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54897,ALGAE SHIP CHARTER - FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54898,"DEMASURE, Yves Leon Agnes",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54899,MARVISE SMC DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54900,ETHERA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54901,"TAMBE, Elyas Jafer",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54903,COBER FZCO DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54904,MISHELL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54905,MYRA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54906,BIGLI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54907,BERTIE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54908,ANTARES I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54909,SILVER TETRA MARINE CO.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54910,RAVI LINES INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54911,KANTI LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54912,GUANYIN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54913,IANTHE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54914,KANTI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54915,MAHADEV,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54916,KYLO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54927,ALE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54932,LIDIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54933,MOANA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54935,PUMBA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54936,RANTANPLAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54966,CYRUS OFFSHORE BANK,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54968,"NOURI, Hadi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54970,"FATAHINOJOKAMBARI, Alireza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54972,"BERJISIAN, Adel",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54975,"JAVANMARDI, Shahab",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,54977,PASARGAD ARIAN INFORMATION AND COMMUNICATION TECHNOLOGY COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55009,QESHM ARIAN DATIS SOFTWARE COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55010,ARVAND ARIAN PASARGAD COMMUNICATIONS AND INFORMATION TECHNOLOGY PAYMENT COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55012,RASHID SAMANEH ELECTRONIC PROCESSING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55013,SHERKAT-E BARID FANAVAR ARIAN,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55014,ARIAN PASARGAD COMMUNICATIONS AND INFORMATION TECHNOLOGY INFRASTRUCTURE COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55015,ARIAN PASARGAD COMMUNICATIONS AND INFORMATION TECHNOLOGY ECOSYSTEM DEVELOPMENT COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55016,ARMAN KISH DATA COMMUNICATIONS AND INFORMATION TECHNOLOGY COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55017,PASARGAD ELECTRONIC PAYMENT SERVICES COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55018,"BIRANG, Ali Morteza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55019,"SHAFIPOUR, Mohammad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55020,"SAJJADI, Seyyed Mahmoud Reza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55051,RUNC EXCHANGE SYSTEM COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55082,"AL-SAMARRA'I, Waleed Khaled Hameed",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55083,BABYLON NAVIGATION DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55084,ADENA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55085,TRYFO NAVIGATION INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55086,LILIANA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55089,ODIAR MANAGEMENT S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55090,CAMILLA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55091,TOPSAIL SHIPHOLDING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55092,DELFINA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55093,KEELY SHIPTRADE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55094,BIANCA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55095,PANAREA MARINE S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55096,ROBERTA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55097,ALEXANDRA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55098,BELLAGIO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55099,GALAXY OIL FZ LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55100,PAOLA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55210,OZARKA SHIPPING - FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55211,KATSUYA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55212,VICTORY ARI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55213,SONDOS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55215,LAFIT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55216,CHANGBAI GLORY SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55218,"MARGARITIS, Antonios",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55219,MARANT SHIPPING AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55220,SQUARE TANKER MANAGEMENT LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55221,COMFORD MANAGEMENT S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55222,UNITED CHARTERING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55223,CRISTOBAL MARINE CORP.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55607,ANGLO PREMIER SHIPPING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55608,HOZDRA GROUP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55609,"NEOWAVE MANAGEMENT CO., LTD",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55610,LOGOS MARINE PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55611,GREAT TIMES SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55617,APS 9,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55619,VOY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55621,YU HONG DE COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55623,MADESTAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55624,JULIET TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55626,PIONEER 92,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55629,PURDUE STELLAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55631,SEA OPERA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55632,TULIP,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55633,S E A SHIP MANAGEMENT LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55634,GAS MARTA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55635,ADA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55636,SEA HERMES,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55637,GAS LEADER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55638,GAS VISION,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55639,BLUE OCEAN MARINE COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55640,SKIATHOS MARITIME AND TRADING SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55654,BERTHA SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55659,EVIE LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55660,VEGA STAR SHIP MANAGEMENT PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55663,TITAN SEAWAYS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55664,PAMIR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55665,SULLANA INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55666,"PULA, Varun",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55667,SAPPHIRE GAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55668,"RAJA, Iyappan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55669,NEPTA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55670,"SHRESTHA, Soniya",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55671,GAS ZEINA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55672,SINOPER SHIPPING CO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55673,ABGO TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55674,SIREN II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55677,SONA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55699,SULLANA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55700,VITA I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55701,GALE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55718,MARKAN WHITE TRADING CRUDE OIL ABROAD CO. L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55719,"RAVENALA TRADING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55720,AMITA PETROCHEMICAL TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55721,SLOGAL ENERGY DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55722,AERILYN SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55727,GAS DIOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55728,OCEAN INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55733,MAX STAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55760,"QINGDAO HEXIN UNITED INTERNATIONAL SHIPPING AGENCY CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,55771,"RIZHAO SHIHUA CRUDE OIL TERMINAL CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56340,PIONEER TANKERS MARINE INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56342,PIONEER SAM,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56344,THASOS MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56345,SERIFOS MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56346,TILOS MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56347,CORFU MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56348,TUSITALA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56349,NEXO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56350,KAISA I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56356,GAS ATHENA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56544,EVEREST SEA NAVIGATION SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56545,ADONIS SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56546,CONCORD SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56547,GOLDEN EAGLE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56548,KURDOS SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56549,KURDOS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56550,KASSIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56551,MAJESTY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56552,KURDOS II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56553,KURDOS III,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56554,AGAPE SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56555,MARUTI SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56556,NOMIKI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56557,MARUTI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56558,"SAKR, Hatem Elsaid Farid Ibrahim",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56559,RED SEA SHIP MANAGEMENT LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56560,M K A SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56562,SKYLIGHT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56563,KHADIGA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56564,M K A,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56566,GOLDEN GATE SHIP MANAGEMENT,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56567,AUROURA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56595,PHOENIX SHIP MANAGEMENT FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56596,ARIHANT SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56597,AETHER SAIL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56598,NEBULA DRIFT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56599,VOYAGER HAVEN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56601,TIDAL RHYTHM,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56602,ARIHANT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56603,DARYA SHIPPING PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56604,SINOSTAR MARINE GROUP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56605,HEMERA LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56606,RAMYA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56607,FOSHAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56608,HEMERA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56615,RUKBAT MARINE SERVICES CO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56616,ALEAH SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56617,J M A SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56618,S M A SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56636,HIGH SEAS PETROLEUM LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56637,QATRAT ALNADA ALMASI SHIP MANAGEMENT L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56638,SEA CITRINE VI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56639,SEA WISE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56640,SEAMULL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56641,SEA ROCK,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56643,FLORA DOLCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56644,DIANA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56645,J M A,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56646,S M A,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56655,INTAN PREMIER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56756,"RASHNO, Mehdi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56757,"ABBASPOUR QOMI, Bashir",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56758,"KHAMER, Hamid Reza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56772,NIKAN PEZHVAK ARIA KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56773,"GIVARI, Akbar",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56774,NANSHAN LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56775,SHINE ROAD TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56776,"ARDAKANI, Masoud Mahdavi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56777,CRYSTAL GAS FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56778,"SHAMANI, Masoud",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56790,TURKIZ FUEL TRADING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56791,EMPIRE INTERNATIONAL TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56792,GOLDEN MIST PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56793,DESERT PULSE TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56795,LIMONIUM PETROCHEMICALS TRADING LLC SOC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56796,HMS TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56797,NAVIERA SHIPPING AND TRADING FZ LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56798,TEJARAT HERMES ENERGY QESHM,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56832,HORIZON HARVEST SHIPPING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56833,GALERAN SERVICE CORP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56834,AAYAT SHIP MANAGEMENT PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56835,BLACK STONE OIL AND GAS,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56836,LONGEVITY SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56837,SEA BIRD,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56838,AVON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56839,AL DIAB II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56840,ODYSSEY MARINE INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56850,PAROS MARITIME S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56851,WANSA GAS SHIPPING CO.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56852,NIBA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56853,LUMA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56854,BENOIL SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56855,TRADE BRIDGE GLOBAL INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56856,CESARIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56857,LONGEVITY 7,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56858,EASTERN HERO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56859,AQUA SPIRIT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56860,CHIRON 5,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56861,KEEL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56864,"ZANJANI, Babak Morteza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56865,ZEDCEX EXCHANGE LTD,Entity,IFSR; IRAN-EO13902; SDGT,Other information,Other information text changed
+2026-11-04,Amended,56867,ZEDXION EXCHANGE LTD,Entity,IFSR; IRAN-EO13902; SDGT,Other information,Other information text changed
+2026-11-04,Amended,56868,FLEET TANQO PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56951,SILVAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56952,DAPHNE V,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56953,ANAYA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56954,VERSA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56955,HORAE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56956,AURA LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56957,AURA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56958,HAPUKA MARINE LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56959,CAUVERI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56981,NOBITEX,Entity,IRAN; IRAN-EO13902; SDGT,Other information,Other information text changed
+2026-11-04,Amended,56997,BEHENGAM TADBIR QESHM SHIPPING AND MARITIME SERVICES COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56998,ATEELA 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,56999,ATEELA 2,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57001,POROS MARITIME VENTURES S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57002,OCEAN KUDOS SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57003,MISTRAL FLEET CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57004,VAST MARINE INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57005,HOOT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57006,REMIZ,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57007,DANUTA I,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57008,ALAA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57009,GAS FATE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57010,NYR SHIPPING CO.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57011,KAITO NAVIGATION SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57012,ITHAKI MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57013,GOLDWAVE MARITIME SERVICES INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57014,OCEAN KOI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57015,NORTH STAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57016,FELICITA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57023,SHIPZA SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57024,TAYLOR SHIPPING FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57028,"RAD, Amir Hossein",Individual,IRAN-EO13902; SDGT,Other information,Other information text changed
+2026-11-04,Amended,57030,NARDIE INTERNATIONAL S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57031,ANIKA LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57032,BELLARIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57033,ANIKA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57071,HOUSE OF SHIPPING INVESTMENT FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57072,CORPLINX CONSULTANCY LLC FZ,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57073,MERITRON DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57074,HELMATIC CONSULTANCY DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57076,ORIEL GROUP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57080,"SRINIVAS, Tanjore Sunilkumar",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57081,SHIPSTAR SHIPCHANDLING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57082,HOUSE OF SHIPPING PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57085,"BALHOTRA, Chetan Prakash",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57090,BITPIN,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57091,WALLEX,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57092,RAMZINEX,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57126,MIRAAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57127,BANGUS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57128,GALVIN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57129,SHUQUN LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57130,HH GLORY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57132,LIN 9,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57134,COSTIN SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57135,MIHIR SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57137,NAXOS MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57138,SKYROS MARITIME AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57139,PATRIOT INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57140,"BAKHSHI, Morteza Ali",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57141,"QUSHCHI, Samad Vafayi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57142,"SHASHAEH, Majid",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57143,AKU TEJARAT RAVIZH KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57145,"KAVOUSI, Masoud",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57146,KARMANIYA TEJARAT ASAR KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57147,"FALAHATKARI, Vahid",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57148,KHAVAR TEJARAT ARKA KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57149,"MOSLEHI, Ehsan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57150,"NASAB, Ehsan Saidi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57151,"TADAYYON, Mahmud",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57152,NAGHSH SIMORGH SAHAND LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57153,"RAMAZAN, Hamid Reza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57154,"GHANBARIAN, Abdolazim",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57155,RAHBAR TEJARI SETAREH TABAN KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57156,"KAHKOUI, Alireza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57157,"HOSSEINI, Amir",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57158,TEJARAT SARIR AFROOZ KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57159,"MALEKI, Fahim",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57160,"ANBARDARAN, Maryam",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57167,NOOSEB TRADE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57168,RQI COMMODITY HK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57169,GASOLIX INTERNATIONAL CORPORATION LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57170,GLOBENTURE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57171,REDWING GLOBAL LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57174,FRATELLO CARBONE TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57175,"EMPERADOR, Janelyn Eusebio",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57177,SANOVO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57178,"HAJIBABA, Sorayya Mehri",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57179,QIANZA LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57180,NIX ENERGY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57313,"AL GHAFUR, Seyyed Mehdi Mohammed",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57397,LISBOA SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57398,LISBOA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57399,ANKA ENERGY AND LOGISTICS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57400,LPG SEVAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57401,TING TAO COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57402,LYNN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57403,THIEN AN HOA BINH COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57404,GLOBAL VIVIAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57433,LAUREL SHIPPING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57434,LEPUS NAVIGATION LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57435,DOFA SHIPPING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57436,EVY BLUE LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57437,ANSHUN II,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57438,SMD WORLD,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57439,EDOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57440,BENTLEY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57441,EXTENSIVE SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57442,COVENIO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57443,XIFOIDES GROUP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57444,GOLDEN SUNRISE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57445,"ZHOUSHAN YAOHAI SHIPPING CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57446,ZHEN ZHU,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57448,NICE GIFT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57449,REAYOU COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57450,YEGUA TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57451,MAGNOLIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57452,STELLAR BEVERLY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57453,SEEKER 8,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57454,"HENGLI PETROCHEMICAL DALIAN REFINERY CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57488,NASSER GHASEMI RAD AND ASSOCIATES PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57489,"GHASEMI RAD, Nasser",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57490,TAHAYYORI AND ASSOCIATES PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57491,"TAHAYYORI, Ehsan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57492,PEDRAM PIROUZAN AND ASSOCIATES PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57493,"PIROUZAN, Pedram",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57494,"REZAEI, Hossein Mohammad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57504,"REZAEI, Masoud Mohammad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57506,MULLINGAR TRADING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57507,ATLAS INTERNATIONAL TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57508,BLINCHE TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57509,CENTRAL PARK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57510,LIGHTBORN GOODS TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57511,SINOBOS LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57512,SISU PRIME LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57515,TERODA INTERNATIONAL LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57516,VERDITA TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57517,ZOELLA TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57519,DECCAN STAR TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57524,AL SAHRA TRADE PETRO DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57525,WIGAN TRADING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57526,BAB AL KHANDAQ TRADING COMPANY LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57527,ARCHITECTONIC CORP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57553,"AL-BAHADLY, Ali Maarij",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57613,"TOLIBOV, Mohammed Ali",Individual,IFSR; IRAN-CON-ARMS-EO; NPWMD,Regime,Regime: 'IFSR; NPWMD' to 'IFSR; IRAN-CON-ARMS-EO; NPWMD'
+2026-11-04,Amended,57653,BESTFORTUNA COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57654,"CHENG PAN CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57656,"NINGBO JIARUI TRADING CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57657,STARSHINE PETROCHEMICAL CORPORATION LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57658,VIGOROUS TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57659,BOLD TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57660,ALIEEN GOODS WHOLESALERS LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57661,SPARKLING COURAGE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57662,MATERIUM GROUP FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57663,GREAT SAIL SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57665,MOZART MARITIME INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57666,OW MARITIME INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57667,FEADSHIP,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57668,SPLENDID LEXY TRADING COMPANY LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57669,VASLATI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57670,GLOBAL FORTUNE SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57671,MEKONG LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57672,DAKUSH,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57673,GALA ROSE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57674,ROMY LINES INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57675,TEJAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57676,GREAT SAIL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57677,OCEAN WAVE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57678,LUNA LUSTER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57679,ARDEN ANGEL SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57680,SWIFT FALCON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57681,VERDA GAS CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57682,MIGHTY NAVIGATOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57685,OCEAN MARVEL SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57686,AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57687,AURORA BUSINESS COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57688,MIDAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57689,TAURUS GAS COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57690,VEINTO GLOBAL MARINE INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57691,GAS ENDURANCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57692,OCEAN RADIANCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57693,QUANTUM STAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57694,GAS STRENGTH,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57695,EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57696,"EBRAHIMI, Yousef",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57697,"CHAKHERLO, Ali Hazrati",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57698,"EBRAHIMI, Mahmoud",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57699,"NEMATI, Samad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57700,GS CHEMICAL TRANSPORTATION LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57701,SCIENCE OBEDIENT INTERNATIONAL COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57702,SUN OCEAN SHIPPING INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57703,GJADES SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57705,BRIGHT GOLD,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57706,DOUBLE IN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57707,NARSIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57708,G JADES,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57793,DOMUS TRADING HK LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57855,BUTANI TRADING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57856,DUNDLOD TRADING FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57857,ADH ENERGY FZE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57858,"ZADA, Sarbaz Abdul",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57860,"MIHANDOUST, Mohammad Shakol",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57862,SAHEL STAR OIL AND GAS COMPANY LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57864,"SHANGHAI QIANYE ENERGY CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57867,LIMRA GAS LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57870,ECOSEAS MARITIME LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57875,BLUE SEA MARINE INCORPORATED AND FAATEH MARITIME INCORPORATED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57877,ADAMAS SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57878,BLACK GOLD TRADE CORPORATION,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57881,GAS GMS LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57883,MD 23,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57885,GLENDALE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57887,AMIR GAS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57888,GAS LAGOON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57890,MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57891,"GERAMIAN NIK, Mehrdad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57892,MILE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57893,"GERAMIAN NIK, Romina",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57894,GAZ GMS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57915,SHAMS AND BAHR TRADING COMPANY L.L.C.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57916,"AL-MANDALAWI, Majid Ali Akbar Namdar",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57917,"AL-MANDALAWI, Abdulhasan Ali Akbar Namdar",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57933,MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57934,CDM TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57935,NABA ALZAKI RAW MATERIALS TRADING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57942,"KHANDAN, Mohsen",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57943,"KHANDAN, Ali Asghar",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57944,MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57945,"ABADI, Shokufeh Rostam",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57946,"SARSHARI, Zahra",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57947,"DARBANI, Mohammad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57948,LAVASANI AND PARTNERS GENERAL PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57949,"LAVASANI, Ahmad Navai",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,57950,"LAVASANI, Amir Navai",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58093,AVA TARABAR DARYA COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58094,"RAHBAR MADANI, Mohammad Reza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58095,SEPEHR NOOR MOBIN COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58096,SEPEHR PAYAM,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58097,ERIKA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58098,ARKANOOR 2,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58099,ARKANOOR 3,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58100,SEA CRUISER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58101,SEA CASTLE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58102,SEA ANCHOR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58103,SEA LEAD SHIPPING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58104,KANGRI 1 INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58106,CICCIO,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58107,SHENTON WAY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58109,TANJONG PAGAR 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58110,VIRENT,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58111,PLATINUM KNIGHTS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58112,HOPE 1 SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58113,NUVETRRO SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58114,VELTRRIVO SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58115,OCEAN SEARUM ONE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58116,HANSA SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58117,HOPE 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58118,JADE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58119,OPAL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58120,ELPINIKI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58121,DARIKA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58122,"GEORGE, Jijin",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58123,"TSERNOSJOV, Maksim",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58124,"VISHAVDEEP, Gautam",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58125,"DEHKORDI, Asghar Aghili",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58127,"MOGHADAS, Behzad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58128,"ZAHED, Hossein Ghorbani",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58131,GOLDEN NEST GROUP LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58132,BSG MANAGEMENT LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58134,SEA LEAD SHIPPING AGENCY INDIA PRIVATE LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58135,SEA LEAD SHIPPING MARSHALL ISLANDS LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58136,SEA LEAD SHIPPING DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58137,WE FREIGHT SHIPPING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58138,VOLTA SHIPPING SERVICES LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58145,VANGUARD TACTICAL SUPPLY LIMITED,Entity,IFSR; IRAN-CON-ARMS-EO; NPWMD,Regime,Regime: 'IFSR; NPWMD' to 'IFSR; IRAN-CON-ARMS-EO; NPWMD'
+2026-11-04,Amended,58146,LUBECK SHIPPING LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58147,"RAKHBARMADANI, Ali",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58148,DEZERA SHIPPING FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58149,AL KINA COMMERCIAL BROKER LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58150,AARE LINES INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58151,GLAVOS SHIPPING FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58152,SAI WAN SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58153,GEMMA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58154,"RONCO, Alessandra",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58155,NADIA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58157,EVORIT STRATEGY CONSULTING LLC-FZ,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58158,SEA GALLEON,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58159,PAYA LEBAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58160,"KAALUND, Martin Austin",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58174,ZEDPAY FINANSAL SISTEM VE HIZMETLERI ANONIM SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58176,DOT ONE VALUE CREATION GROUP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58177,ZEDX DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58178,DOTONE GOLD COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58179,DOTONE RAIL COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58180,DOTONE BARTER COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58181,DOTONE AIRLINES COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58182,DOTONE TRIP,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58183,BZ DIAMOND DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58185,"ZANJANI, Bahareh Morteza",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58186,"REZAZADEH, Mehdi",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58187,"OIMAKHMADOV, Sukhrob",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58188,"BANI, Solmaz",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58189,QI HANG SHIP MANAGEMENT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58190,WELL SAIL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58194,CONFIDENT APEX LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58214,MARINOVA FREIGHT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58215,VAST MIGHTY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58216,OCEAN TRANQUILITY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58217,BRANCH SAYING INTERNATIONAL TRADING CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58218,NATSUMI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58219,NIRETA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58220,CRYSTAL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58221,YEHOPE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58227,LILY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58231,"BILLION NEXUS INT'L CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58232,AL SALMI,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58233,PERSIAN GULF MARINE INSURANCE COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58234,HORMUZSAFE MARINE SERVICES AUTHORITY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58235,NEVADA SPIRIT COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58236,BREEZE V,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58239,ABAN TETHER EXCHANGE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58266,"SHARIFI, Shima",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58267,"GHASEMPOUR, Saeed",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58268,ALPS INTERNATIONAL L.L.C-FZ,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58269,"MOHAMMAD, Peivand",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58270,OVIEDO OVERSEAS COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58271,CAILAFANG PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58272,TITAN EXCHANGE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58274,AYDENIZ GENERAL TRADING L.L.C,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58275,BLUE DASH GENERAL TRADING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58276,GLEAMING HK TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58277,"HENDI, Amir",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58310,SIFRA SHIPPING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58311,SIFRA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58312,"VIENNA SHIPPING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58313,G SILVER,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58316,RIQUEZA GROUP LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58317,LILIMOON NAVIGATION INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58319,ESTANICA TRADING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58320,QUANTUM HOPE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58321,VOYAGE ELITE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58323,TELA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58327,FEILI CO LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58328,MINVUR LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58329,FEISU LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58330,GUSKA CO LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58350,AZURE SHIPPING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58351,ARC CHARTERING PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58352,SKY OIL AND GAS ASIA LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58397,SHIP FUELS AND TRADE DMCC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58398,SHIPOIL FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58400,SHIPOIL LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58409,"TSORIS, Almpertos",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58431,WELLBRED CAPITAL PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58432,WELLBRED TRADING FZCO,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58433,WELLBRED TRADING SA,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58434,LA NIVERNAISE DE RAFFINAGE SAS,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58442,"GANDHI, Mansoor Tayabbhai",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58460,PARITOSH SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58461,ORNELLA SHIPPING INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58466,HECHUANG INTERNATIONAL GROUP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58467,JLS DRAGON COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58468,KANHA SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58469,SHUNHANG SHIP MANAGEMENT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58470,SAINT ABUNDANT INTERNATIONAL CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58471,TERRA NAV SHIPPING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58473,G SPRING,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58474,PARITOSH,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58475,KANHA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58476,KING CHAIN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58477,POLAR,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58478,BITU,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58479,STARWAY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58480,GAS LUCKY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58485,KAMENG TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58494,ATA AIRLINES COMPANY,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58495,IRAN AIR TOUR,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58497,IRAN ASEMAN AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58498,KARUN AIRLINES COMPANY,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58508,VARESH AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58509,AIR SHIRAZ,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58510,KISH AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58511,TOOS AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58512,ERWAN AIRLINE COMPANY,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58513,ASA JET AIRLINE,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58514,SOROUSH AIR,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58515,ATLAS AVIATION GROUP,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58516,SEPEHRAN AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58517,QESHM AIR,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58518,TABAN AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58519,SAHA AIRLINES,Entity,IFSR; IRAN-CON-ARMS-EO; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58523,ZAGROS AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58526,AVA AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58529,CHABAHAR AIRLINES COMPANY,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58530,FLY KISH AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58531,FLY PERSIA AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58532,JSKY AIRLINES,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58533,LAD AIRWAYS,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58534,MEHR AIRWAYS,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58535,NASIM AIR,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58537,PARS OGHYANOUS KISH COMPANY,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58538,RAIMON AIRWAYS,Entity,IFSR; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58544,GOLDEN GLOBAL YATIRIM BANKASI ANONIM SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58545,GOLDEN GLOBAL VARLIK KIRALAMA ANONIM SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58548,GOLDEN GLOBAL PORTFOY YONETIMI ANONIM SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58571,INTERNATIONAL DEVELOPMENT BANK FOR INVESTMENT AND FINANCE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58618,PISHTAZ SIMORGH ELECTRONIC TRADE COMPANY,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58619,BITBANK,Entity,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58620,"ZAKER HOSSEIN, Hossein Ali",Individual,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58630,"ZAKER HOSSEIN, Mohammad Mahdi",Individual,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58631,"HEIDARI, Seyed Adel",Individual,IRAN; IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58761,IRAN KHODRO COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58762,PARS KHODRO COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58763,ZAMYAD COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58764,IRAN KHODRO DIESEL COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58765,ISLAMIC REPUBLIC OF IRAN RAILWAY COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58766,RAJA PASSENGER TRAINS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58767,SHERKAT-E RAH AHAN-E KHAMLE-O-NAGHLE,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58768,SAIPA IRANIAN AUTOMOBILE MANUFACTURING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58777,KGT TRADING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58778,DOMINION TRADING GROUP LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58779,INTEGRATED AUTO PARTS LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58780,HEAVY EQUIPMENT PRODUCTION COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58781,"HEPCO SHANGHAI CO., LTD.",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58782,"BONASOL GROUP CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58783,"MEIZI CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58784,EAST CONCORD DEVELOPMENT LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58785,PT GOLDEN MOTORCYCLE INTERNATIONAL,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58786,TROY TRADING ARAC PARCALARI SANAYI VE TICARET LIMITED SIRKETI,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58787,"HESSENBERG CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58788,TANEX GLOBAL TRADING HONG KONG LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58789,NIROO MOTOR SHIRAZ INDUSTRIAL AND MANUFACTURING COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58790,NIROO MOTOR DAMAVAND COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58810,WHALES SHIPPING LINE LLC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58811,AMIGOZ SINGAPORE PTE. LTD.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58812,TINA 5,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58813,"NOSTALGIA CO., LTD",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58814,GRAVION MARITIME CO.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58815,SOGL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58816,BETTA SHIPPING INC,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58817,MAKARUA SHIPPING LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58818,GODDESS SHIPPING CORP.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58819,STANDWILL SHIPPING LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58821,MACKEREL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58822,GAS MARAKUA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58823,ZIXUAN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58824,AVA 6,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58827,SCIENCE RU TRADING CO LTD,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58829,NORTHPORT NAVIGATION INC.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58830,BRICH SHIPPING COMPANY LIMITED,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58831,NOBLE SEA,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58832,SHENZHEN,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58834,EXFLAME,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58873,WHALES DIAMOND,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58874,WHALES PEARL,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58930,"MOHAMMADI, Zhila",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58931,ROXETTE MARITIME SHIPPING AND TRADING S.A.,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58932,KARNAKIS AND KARNAKIS,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58934,"ELITESPHERE TRADING CO., LIMITED",Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58935,SEYYED ABBAS HOSSEINI PARSA AND PARTNERS QESHM GENERAL PARTNERSHIP COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58936,"MOHIESNEJAD, Khaled",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58937,"HOSSEINI PARSA, Seyyed Abbas",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58938,"BAVI, Sadegh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58939,BAVI AND PARTNERS EXCHANGE COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58940,ABOLHASAN JALALI AND PARTNERS EXCHANGE COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58941,"JALALI, Abolhasan",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58942,"KATEBI, Milad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58943,"SABETI, Amir",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58944,"MULLAH MOHAMMADI, Ensiyeh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58945,"BORJI, Nazanin",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58946,"ALLAHYAR, Farzad",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58947,"VASIGHI MERAJI, Fatemeh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58948,SOHEIL AND SORUSH NAJAFZADEH AND PARTNERS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58949,"ABDOLALIPUR, Azadeh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58950,"NAJAFZADEH, Sorush",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58951,"NAJAFZADEH, Soheil",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58952,"MIRMOHAMMADI, Mansureh",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58953,JAZIREH INTERNATIONAL BANK COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58954,CHABAHAR INTERNATIONAL BANK OVERSEAS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58955,ANEMOS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58956,GLORIS,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58957,PRIDE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58958,"KARNAKIS KOSMAS, Sofianos",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58959,"KARNAKIS KOSMAS, Konstantinos",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58960,"KARNAKIS KOSMAS, Ioanis",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58961,"ORTEGA JONES, Pedro",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58962,"ORTEGA JONES, Roberto",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58963,DESTINY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58964,FLAMINGO 1,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58965,HARMONY,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58966,PRINCE,Ship,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58990,"RAZAVI, Sayyed Ruhollah",Individual,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58991,TEJARAT GOSTAR ATLAS PARSIAN KISH COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
+2026-11-04,Amended,58992,FARZANEGAN ENERGY PARS COMPANY,Entity,IRAN-EO13902,Other information,Other information text changed
