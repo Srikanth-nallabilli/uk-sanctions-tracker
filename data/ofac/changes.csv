@@ -1168,3 +1168,11 @@ run_date,change_type,unique_id,primary_name,designation_type,regime,fields_chang
 2026-11-05,Amended,27426,CAROIL TRANSPORT MARINE LTD,Entity,CUBA-EO14404; VENEZUELA-EO13850,Aliases and name variations; Regime; Address country; Other information,Aliases and name variations: 'CAROIL TRANSPORT MARINE LIMITED' to 'CAROIL TRANSPORT MARINE LIMITED; FRISIAN FAITH SHIPPING COMPANY LIMITED' | Regime: 'VENEZUELA-EO13850' to 'CUBA-EO14404; VENEZUELA-EO13850' | Address country: 'Cyprus' to 'Cuba; Cyprus' | Other information text changed
 2026-11-05,Amended,27431,MARIA CRISTINA,Ship,CUBA-EO14404; VENEZUELA-EO13850,Primary name; Regime; Other information; Flag of ship,Primary name: 'CARLOTA C' to 'MARIA CRISTINA' | Regime: 'VENEZUELA-EO13850' to 'CUBA-EO14404; VENEZUELA-EO13850' | Other information text changed | Flag of ship: 'Panama' to 'Cuba'
 2026-11-05,Amended,30502,CEIEC,Entity,CUBA-EO14404; VENEZUELA,Regime; Other information,Regime: 'VENEZUELA' to 'CUBA-EO14404; VENEZUELA' | Other information text changed
+2026-11-06,Added,59091,DIVERSE TRADE INC,Entity,IRAN-EO13902,,
+2026-11-06,Added,59092,NIA NATIONS CURRENCY LTD,Entity,IRAN-EO13902,,
+2026-11-06,Added,59093,CCC INC,Entity,IRAN-EO13902,,
+2026-11-06,Added,59094,B GALAXY INC,Entity,IRAN-EO13902,,
+2026-11-06,Added,59095,2397639 ONTARIO LTD,Entity,IRAN-EO13902,,
+2026-11-06,Added,59096,1380079 BC LTD,Entity,IRAN-EO13902,,
+2026-11-06,Added,59097,TOP PC TECHNICIAN INC,Entity,IRAN-EO13902,,
+2026-11-06,Added,59099,DARVISH EXCHANGE,Entity,IRAN-EO13902,,
