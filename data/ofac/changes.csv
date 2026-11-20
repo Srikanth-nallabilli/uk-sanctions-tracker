@@ -1211,3 +1211,7 @@ run_date,change_type,unique_id,primary_name,designation_type,regime,fields_chang
 2026-11-19,Added,58871,"BEI FANG BO LIN CONSTRUCTION DECORATION CO., LTD.",Entity,CYBER4,,
 2026-11-19,Added,58872,"ZHZ INVESTMENT CONSULTING CO., LTD.",Entity,CYBER4,,
 2026-11-19,Amended,10902,'NDRANGHETA,Entity,ILLICIT-DRUGS-EO14059; SDNTK,Primary name; Regime; Other information,Primary name: ''NDRANGHETA ORGANIZATION' to ''NDRANGHETA' | Regime: 'SDNTK' to 'ILLICIT-DRUGS-EO14059; SDNTK' | Other information text changed
+2026-11-20,Added,59250,"ARABNEJAD, Mojtaba",Individual,IFSR; SDGT,,
+2026-11-20,Added,59251,"BAVAND, Mohammad Javad",Individual,IRAN-EO13902,,
+2026-11-20,Added,59252,"TAJ, Majid",Individual,IRAN-EO13902,,
+2026-11-20,Added,59253,"SERVATI, Mohammadhossein",Individual,IFSR; SDGT,,
